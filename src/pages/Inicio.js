@@ -1,12 +1,9 @@
 import React from "react";
 
-import $ from "jquery";
-import AOS from "aos";
+import Slider from "react-slick";
 
 import mas_vendido from "../img/btn-mas-vendidos.png";
 import productos_destacados from "../img/btn-productos-destacados.png";
-
-import home_1 from "../img/clientes/aqr.png";
 
 import home_2 from "../img/home-2.jpg";
 import logo_blanco from "../img/logo-blanco.png";
@@ -17,7 +14,68 @@ function Inicio() {
   const mas_vendidos = require("../json/vendidos.json");
   const destacados = require("../json/destacados.json");
   const clientes = require("../json/clientes.json");
-  const url = clientes.url;
+  const settings = {
+    slidesToShow: 6,
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: true,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  };
+  const settins_2 = {
+    slidesToShow: 4,
+    autoplay: true,
+    infinite: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          arrows: true,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  };
   return (
     <>
       <div class="container-fluid">
@@ -92,19 +150,29 @@ function Inicio() {
           </div>
 
           <div class="col-11 destacados mt-4">
-            <div
-              data-aos="fade-down"
-              data-aos-duration="1000"
-              class="text-center px-2"
-            >
-              <a href="link">
-                <img src="imagen" alt="" class="img-fluid" />
-              </a>
-
-              <a href="link">
-                <p>json</p>
-              </a>
-            </div>
+            <Slider {...settins_2}>
+              {destacados.data.map(item => {
+                return (
+                  <div
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                    class="text-center px-2"
+                  >
+                    <a href="link">
+                      <img
+                        // src={home_1}
+                        src={require("../img/productos/impresoras/" + item.img)}
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </a>
+                    <a href="link">
+                      <p>{item.nombre}</p>
+                    </a>
+                  </div>
+                );
+              })}
+            </Slider>
           </div>
         </div>
 
@@ -146,99 +214,21 @@ function Inicio() {
             <h2>Nuestros clientes</h2>
           </div>
           <div class="col-10 logos mb-4">
-            {clientes.data.map(cliente => {
-              return (
-                <div>
-                  <img
-                    src={require("../img/clientes/" + cliente.name + ".png")}
-                    class="img-fluid mx-auto"
-                  />
-                </div>
-              );
-            })}
+            <Slider {...settings}>
+              {clientes.data.map(cliente => {
+                return (
+                  <div>
+                    <img
+                      src={require("../img/clientes/" + cliente.name + ".png")}
+                      class="img-fluid mx-auto"
+                    />
+                  </div>
+                );
+              })}
+            </Slider>
           </div>
         </div>
       </div>
-      {/* <script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-		<script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/valida_contacto.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/valida_te_llamamos.js" type="text/javascript" charset="utf-8"></script>
-
-		<script type="text/javascript" src="js/slick/slick.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> */}
-
-      {/* <script type="text/javascript">
-        {$(document).ready(function() {
-          AOS.init();
-
-          $(".destacados").slick({
-            slidesToShow: 4,
-            autoplay: true,
-            infinite: true,
-            autoplaySpeed: 3000,
-            responsive: [
-              {
-                breakpoint: 800,
-                settings: {
-                  arrows: true,
-                  slidesToShow: 3
-                }
-              },
-              {
-                breakpoint: 700,
-                settings: {
-                  arrows: false,
-                  dots: true,
-                  slidesToShow: 2
-                }
-              },
-              {
-                breakpoint: 500,
-                settings: {
-                  arrows: false,
-                  dots: true,
-                  slidesToShow: 1
-                }
-              }
-            ]
-          });
-
-          $(".logos").slick({
-            slidesToShow: 6,
-            autoplay: true,
-            infinite: true,
-            autoplaySpeed: 3000,
-            responsive: [
-              {
-                breakpoint: 800,
-                settings: {
-                  arrows: true,
-                  slidesToShow: 3
-                }
-              },
-              {
-                breakpoint: 700,
-                settings: {
-                  arrows: false,
-                  dots: true,
-                  slidesToShow: 2
-                }
-              },
-              {
-                breakpoint: 500,
-                settings: {
-                  arrows: false,
-                  dots: true,
-                  slidesToShow: 1
-                }
-              }
-            ]
-          });
-        })}
-      </script> */}
     </>
   );
 }

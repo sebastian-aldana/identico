@@ -69,7 +69,7 @@ const Lealtad = () => {
                   return (
                     <>
                       <img
-                        src={LoyalStudio}
+                        src={require("../../img/" + servicio.img)}
                         alt="LoyalStudio"
                         class="img-fluid float-md-left mr-md-4 mb-4"
                       />
