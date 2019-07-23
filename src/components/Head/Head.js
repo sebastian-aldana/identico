@@ -1,0 +1,49 @@
+import React from "react";
+import { Helmet } from "react-helmet";
+
+import icon from "../../img/favicon.png";
+
+import custom_styles from "../../css/custom_styles.css";
+import styles from "../../css/estilos.css";
+import slick_css from "../../js/slick/slick.css";
+import slick_theme from "../../js/slick/slick-theme.css";
+
+import font_awesome from "../../js/fontawesome-all";
+
+class Head extends React.Component {
+  render() {
+    return (
+      <div className="application">
+        <Helmet>
+          <meta charset="utf-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+          />
+          <meta
+            name="description"
+            content="IDéntico México Las impresoras de credenciales de PVC y de tarjetas personalizadas para afiliación, identificación de empleados, bonos, regalos o gafetes."
+          />
+          <link rel="icon" href={icon} type="image/x-icon" />
+
+          <noscript>{`
+        <link rel="stylesheet" type="text/css" href="../../css/estilos.css" />
+        <link rel="stylesheet" type="text/css" href="../../js/slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="../../js/slick/slick-theme.css" />
+          <link rel="stylesheet" type="text/css" href="../../css/custom_styles.css" />
+        `}</noscript>
+
+          <script src="/src/js/fontawesome-all.js" type="text/javascript" />
+          <script src="/src/js/shell.js" type="text/javascript" />
+
+          <script
+            src="https://www.google.com/recaptcha/api.js"
+            type="text/javascript"
+          />
+        </Helmet>
+      </div>
+    );
+  }
+}
+
+export default Head;

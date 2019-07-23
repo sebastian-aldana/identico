@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "nombre": "Impresora ZEBRA ZXP9",
+      "img": "zebra_zxp9_1.jpg",
+      "descripcion": "Diseñada para satisfacer la necesidad de aplicar la mas alta seguridad, la ZXP Series 9 le permite obtener tarjetas con ... \r\n"
+    },
+    {
+      "id": "2",
+      "nombre": "Impresora Zebra ZXP3",
+      "img": "zebra_zxp3_4.jpg",
+      "descripcion": "La Serie 3 ZXP ofrece una amplia gama de opciones de cinta de alta capacidad, junto con la capacidad para seleccionar el grosor de la tarjeta que s...\r\n"
+    },
+    {
+      "id": "3",
+      "nombre": "Impresora ZEBRA ZXP7",
+      "img": "zebra_zxp7_1.jpg",
+      "descripcion": "La impresora tiene un rendimiento rápido y confiable.Ofrece a los usuarios un valor excepcional, se ajusta automáticamente al grosor ... \r\n"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "url": "../img/clientes/",
+  "data": [
+    {
+      "id": 0,
+      "name": "aqr"
+    },
+    {
+      "id": 1,
+      "name": "azpe"
+    },
+    {
+      "id": 2,
+      "name": "caracol"
+    },
+    {
+      "id": 3,
+      "name": "cargill"
+    },
+    {
+      "id": 4,
+      "name": "ccl"
+    },
+    {
+      "id": 5,
+      "name": "consolid"
+    },
+    {
+      "id": 6,
+      "name": "convermex"
+    },
+    {
+      "id": 7,
+      "name": "cube"
+    },
+    {
+      "id": 8,
+      "name": "eutelast"
+    },
+    {
+      "id": 9,
+      "name": "fandeli"
+    },
+    {
+      "id": 10,
+      "name": "fox"
+    },
+    {
+      "id": 11,
+      "name": "icel_25"
+    },
+    {
+      "id": 12,
+      "name": "logotec"
+    },
+    {
+      "id": 13,
+      "name": "presidente"
+    },
+    {
+      "id": 14,
+      "name": "puma"
+    },
+    {
+      "id": 15,
+      "name": "triada"
+    },
+    {
+      "id": 16,
+      "name": "universidad_ecatepec"
+    },
+    {
+      "id": 17,
+      "name": "fox"
+    }
+  ]
+}
