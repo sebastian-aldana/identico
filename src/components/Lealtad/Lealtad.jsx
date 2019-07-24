@@ -9,9 +9,9 @@ const Lealtad = () => {
   const [active, setActive] = useState(0);
   const [text, setText] = useState(servicios.data[0]);
 
-  const handleClick = id => {
-    id.preventDefault();
-    console.log(id);
+  const handleClick = e => {
+    e.preventDefault();
+    console.log(e);
 
     // setActive(id);
     // setText(servicios.data[id]);
@@ -50,7 +50,11 @@ const Lealtad = () => {
                   role="tab"
                   aria-controls="lealtad"
                   aria-selected="true"
-                  onClick={handleClick}
+                  onClick={e => {
+                    e.preventDefault();
+                    setActive(0);
+                    setText(servicios.data[0]);
+                  }}
                 >
                   <span className="medio">
                     PROGRAMA
@@ -72,7 +76,11 @@ const Lealtad = () => {
                       ? "nav-link total acti active"
                       : "nav-link total"
                   }
-                  onClick={handleClick}
+                  onClick={e => {
+                    e.preventDefault();
+                    setActive(1);
+                    setText(servicios.data[1]);
+                  }}
                   href="identimovil#identimovil"
                 >
                   <span className="medio">IDENTIMÓVIL</span>
@@ -91,7 +99,11 @@ const Lealtad = () => {
                       ? "nav-link total acti active"
                       : "nav-link total"
                   }
-                  onClick={handleClick}
+                  onClick={e => {
+                    e.preventDefault();
+                    setActive(2);
+                    setText(servicios.data[2]);
+                  }}
                   href="identinet#identinet"
                 >
                   <span className="medio">IDÉNTINET</span>
@@ -110,7 +122,11 @@ const Lealtad = () => {
                       ? "nav-link total acti active"
                       : "nav-link total"
                   }
-                  onClick={handleClick}
+                  onClick={e => {
+                    e.preventDefault();
+                    setActive(3);
+                    setText(servicios.data[3]);
+                  }}
                   href="mantenimineto-correctivo-y-preventivo#mantenimiento"
                 >
                   <span className="medio">
