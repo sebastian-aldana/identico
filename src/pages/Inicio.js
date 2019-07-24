@@ -1,6 +1,7 @@
 import React from "react";
 
 import Slider from "react-slick";
+import AOS from 'aos'
 
 import mas_vendido from "../img/btn-mas-vendidos.png";
 import productos_destacados from "../img/btn-productos-destacados.png";
@@ -11,6 +12,7 @@ import logo_zebra from "../img/logo-zebra.jpg";
 import logo_fargo from "../img/logo-fargo.jpg";
 
 function Inicio() {
+  AOS.init()
   const mas_vendidos = require("../json/vendidos.json");
   const destacados = require("../json/destacados.json");
   const clientes = require("../json/clientes.json");

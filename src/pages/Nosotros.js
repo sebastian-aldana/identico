@@ -1,5 +1,8 @@
 import React from "react";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import respeto from "../img/respeto.png";
 import responsabilidad from "../img/responsabilidad.png";
 import compromiso from "../img/compromiso.png";
@@ -7,6 +10,7 @@ import honradez from "../img/honradez.png";
 import profesionalismo from "../img/profesionalismo.png";
 
 function Nosotros() {
+  AOS.init();
   return (
     <div class="row justify-content-center">
       <div class="col-11 cAzulM py-3 mt-5 text-justify">

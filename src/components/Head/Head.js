@@ -28,13 +28,8 @@ class Head extends React.Component {
 
           <noscript>{`
         <link rel="stylesheet" type="text/css" href="../../css/estilos.css" />
-        <link rel="stylesheet" type="text/css" href="../../js/slick/slick.css" />
-        <link rel="stylesheet" type="text/css" href="../../js/slick/slick-theme.css" />
           <link rel="stylesheet" type="text/css" href="../../css/custom_styles.css" />
         `}</noscript>
-
-          <script src="/src/js/fontawesome-all.js" type="text/javascript" />
-          <script src="/src/js/shell.js" type="text/javascript" />
 
           <script
             src="https://www.google.com/recaptcha/api.js"
