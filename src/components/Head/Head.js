@@ -5,8 +5,6 @@ import icon from "../../img/favicon.png";
 
 import custom_styles from "../../css/custom_styles.css";
 import styles from "../../css/estilos.css";
-import slick_css from "../../js/slick/slick.css";
-import slick_theme from "../../js/slick/slick-theme.css";
 
 import font_awesome from "../../js/fontawesome-all";
 
@@ -24,6 +22,7 @@ class Head extends React.Component {
             name="description"
             content="IDéntico México Las impresoras de credenciales de PVC y de tarjetas personalizadas para afiliación, identificación de empleados, bonos, regalos o gafetes."
           />
+          <title>Home | IDéntico</title>
           <link rel="icon" href={icon} type="image/x-icon" />
 
           <noscript>{`
