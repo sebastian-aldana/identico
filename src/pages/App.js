@@ -17,9 +17,9 @@ function App() {
           <Route exact path="/nosotros" component={Nosotros} />
           <Route exact path="/productos" component={Productos} />
           <Route exact path="/servicios" component={Servicios} />
+          <Route component={NotFound} />
         </Switch>
       </Layout>
-      <Route component={NotFound} />
     </BrowserRouter>
   );
 }
