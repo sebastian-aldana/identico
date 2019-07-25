@@ -5,6 +5,8 @@ import icon from "../../img/favicon.png";
 
 import custom_styles from "../../css/custom_styles.css";
 import styles from "../../css/estilos.css";
+import slick_css from "../../js/slick/slick.css";
+import slick_theme from "../../js/slick/slick-theme.css";
 
 import font_awesome from "../../js/fontawesome-all";
 
