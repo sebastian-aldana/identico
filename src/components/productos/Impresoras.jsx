@@ -19,7 +19,16 @@ const Impresoras = () => {
       <div class="row justify-content-center">
         <div class="col-11 text-center text-md-left">
           <span class="mx-2">
-            <img src={logo_zebra} class="img-fluid" />
+            <a
+              href="http://identicomexico.com/impresoras-fargo#impresoras-fargo"
+              class="btn btn-link"
+              onClick={e => {
+                e.preventDefault();
+                setActive(1);
+              }}
+            >
+              <img src={logo_zebra} class="img-fluid" />
+            </a>
           </span>
           <span class="mx-2">
             <a
