@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar/Navbar";
 import Carrousel from "../components/Carousel/Carousel";
-import Footer from "../components/Footer/Footer";
 import Head from "../components/Head/Head";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,7 +15,6 @@ const Layout = props => {
       <Navbar />
       <Carrousel />
       {props.children}
-      <Footer />
     </>
   );
 };

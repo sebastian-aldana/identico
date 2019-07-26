@@ -4,14 +4,19 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: path.resolve(__dirname, "src/index.js")
   },
   output: {
-    path: path.resolve(__dirname, "public_html"),
-    filename: "js/[name].js"
+    filename: "[name].js",
+    chunkFilename: "[name].js",
+    path: path.resolve(__dirname, "identico")
   },
+  // output: {
+  //   path: path.resolve(__dirname, "identico"),
+  //   filename: "js/[name].js"
+  // },
   resolve: {
     extensions: [".js", ".jsx", ".styl"]
   },
@@ -21,7 +26,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         use: {
-          loader: "babel-loader"
+          loader: "babel-loader",
+          options: {
+            compact: true
+          }
         }
       },
       // {

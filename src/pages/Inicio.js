@@ -1,7 +1,9 @@
 import React from "react";
 
 import Slider from "react-slick";
-import AOS from 'aos'
+import AOS from "aos";
+
+import { Link } from "react-router-dom";
 
 import mas_vendido from "../img/btn-mas-vendidos.png";
 import productos_destacados from "../img/btn-productos-destacados.png";
@@ -12,7 +14,7 @@ import logo_zebra from "../img/logo-zebra.jpg";
 import logo_fargo from "../img/logo-fargo.jpg";
 
 function Inicio() {
-  AOS.init()
+  AOS.init();
   const mas_vendidos = require("../json/vendidos.json");
   const destacados = require("../json/destacados.json");
   const clientes = require("../json/clientes.json");
@@ -128,9 +130,9 @@ function Inicio() {
                         </div>
                       </div>
                     </div>
-                    <a class="btn btn-primary" href="json 4" role="button">
+                    <Link class="btn btn-primary" to="/detalle" role="button">
                       Más información
-                    </a>
+                    </Link>
                   </div>
                 );
               })}
