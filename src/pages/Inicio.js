@@ -13,7 +13,7 @@ import logo_blanco from "../img/logo-blanco.png";
 import logo_zebra from "../img/logo-zebra.jpg";
 import logo_fargo from "../img/logo-fargo.jpg";
 
-function Inicio() {
+function Inicio(props) {
   AOS.init();
   const mas_vendidos = require("../json/vendidos.json");
   const destacados = require("../json/destacados.json");
@@ -130,7 +130,12 @@ function Inicio() {
                         </div>
                       </div>
                     </div>
-                    <Link class="btn btn-primary" to="/detalle" role="button">
+                    <Link
+                      class="btn btn-primary"
+                      to="/detalle"
+                      onClick={props.cambio(dato.id)}
+                      role="button"
+                    >
                       Más información
                     </Link>
                   </div>
@@ -162,17 +167,18 @@ function Inicio() {
                     data-aos-duration="1000"
                     class="text-center px-2"
                   >
-                    <a href="link">
+                    <Link to="/detalle">
                       <img
                         // src={home_1}
+                        onClick={props.cambio(item.id)}
                         src={require("../img/productos/impresoras/" + item.img)}
                         alt=""
                         class="img-fluid"
                       />
-                    </a>
-                    <a href="link">
+                    </Link>
+                    <Link to="/detalle" onClick={props.cambio(item.id)}>
                       <p>{item.nombre}</p>
-                    </a>
+                    </Link>
                   </div>
                 );
               })}

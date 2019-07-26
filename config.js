@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     index: path.resolve(__dirname, "src/index.js")
   },
@@ -26,10 +26,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules)/,
         use: {
-          loader: "babel-loader",
-          options: {
-            compact: true
-          }
+          loader: "babel-loader"
+          // options: {
+          //   compact: true
+          // }
         }
       },
       // {
