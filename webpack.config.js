@@ -9,8 +9,10 @@ module.exports = {
     index: path.resolve(__dirname, "src/index.js")
   },
   output: {
-    path: path.resolve(__dirname, "public_html"),
+    path: path.resolve(__dirname, "identico"),
     filename: "js/[name].js"
+    // publicPath: "identico/",
+    // chunkFilename: "js/[id].[chunkhash].js"
   },
   resolve: {
     extensions: [".js", ".jsx", ".styl"]
@@ -25,10 +27,6 @@ module.exports = {
         }
       },
       {
-        test: /\.json$/,
-        loader: "json-loader"
-      },
-      {
         test: /\.html$/,
         use: [
           {
@@ -40,38 +38,21 @@ module.exports = {
         test: /\.css$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: "../",
-              name: "css/[name].css"
-            }
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: "css-loader",
             options: {
-              import: true
+              importLoaders: 1
             }
           }
         ]
       },
-      {
-        test: /\.styl$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: "../",
-              name: "css/[name].css"
-            }
-          },
-          {
-            loader: "css-loader"
-          },
-          {
-            loader: "stylus-loader"
-          }
-        ]
-      },
+      // {
+      //   test: /\.json$/,
+      //   exclude: /(node_modules)/,
+      //   loader: "json-loader"
+      // },
       {
         test: /\.(jpg|png|gif|woff|eot|ttf|svg)$/,
         use: {
@@ -87,14 +68,13 @@ module.exports = {
   },
 
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].css",
+      chunkFilename: "css/[id].css"
+    }),
     new HtmlWebPackPlugin({
       template: "./public/index.html",
-      file: "./index.html"
-    }),
-    new MiniCssExtractPlugin({
-      filename: "css/[name][hash].css",
-      chunkFilename: "[id].css"
+      file: "public/index.html"
     }),
     new webpack.DllReferencePlugin({
       manifest: require("./modules-manifest.json")

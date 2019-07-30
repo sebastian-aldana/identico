@@ -80,50 +80,56 @@ function Inicio(props) {
       }
     ]
   };
+
+  // {
+  //   return holamundo;
+  // }
+
   return (
     <>
-      <div class="container-fluid">
-        <div class="row mt-4">
+      <div className="container-fluid">
+        <div className="row mt-4">
           <div
-            class="col-12"
+            className="col-12"
             style={{ backgroundColor: "#005694", height: "45px" }}
           />
-          <div class="col-12 posr" style={{ backgroundColor: "#ededed" }}>
+          <div className="col-12 posr" style={{ backgroundColor: "#ededed" }}>
             <img
               src={`${mas_vendido}`}
               alt="Productos más vendidos"
-              class="pestania"
+              className="pestania"
             />
-            <div class="row justify-content-center masVendidos mt-5 text-center">
+            <div className="row justify-content-center masVendidos mt-5 text-center">
               {mas_vendidos.data.map(dato => {
                 return (
                   <div
+                    key={dato.id}
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    class="col-md-4 mt-2 mb-4 p-4"
+                    className="col-md-4 mt-2 mb-4 p-4"
                   >
-                    <div class="marco posr">
+                    <div className="marco posr">
                       <img
                         src={require("../img/productos/impresoras/" + dato.img)}
                         alt=""
-                        class="img-fluid"
+                        className="img-fluid"
                       />
 
                       <h5
-                        class="m-0 font-weight-bold"
+                        className="m-0 font-weight-bold"
                         style={{ backgroundColor: "#fff" }}
                       >
-                        <span class="py-5 py-xl-4 d-inline-block">
+                        <span className="py-5 py-xl-4 d-inline-block">
                           {dato.nombre}
                         </span>
                       </h5>
 
                       <div
-                        class="descripcion text-white "
+                        className="descripcion text-white "
                         style={{ padding: 0 }}
                       >
-                        <div class="total">
-                          <div class="medio">
+                        <div className="total">
+                          <div className="medio">
                             <p>{dato.descripcion}</p>
                             <h3>{dato.nombre}</h3>
                           </div>
@@ -131,7 +137,7 @@ function Inicio(props) {
                       </div>
                     </div>
                     <Link
-                      class="btn btn-primary"
+                      className="btn btn-primary"
                       to="/detalle"
                       onClick={props.cambio(dato.id)}
                       role="button"
@@ -145,27 +151,28 @@ function Inicio(props) {
           </div>
         </div>
 
-        <div class="row justify-content-center mt-5">
+        <div className="row justify-content-center mt-5">
           <div
-            class="col-11 mt-4 posr"
+            className="col-11 mt-4 posr"
             style={{ backgroundColor: "#0096c7", height: "25px" }}
           >
             <img
               src={productos_destacados}
-              class="pestania"
+              className="pestania"
               alt="Productos destcados"
               style={{ right: "5%", left: "inherit" }}
             />
           </div>
 
-          <div class="col-11 destacados mt-4">
+          <div className="col-11 destacados mt-4">
             <Slider {...settins_2}>
               {destacados.data.map(item => {
                 return (
                   <div
+                    key={item.id}
                     data-aos="fade-down"
                     data-aos-duration="1000"
-                    class="text-center px-2"
+                    className="text-center px-2"
                   >
                     <Link to="/detalle">
                       <img
@@ -173,7 +180,7 @@ function Inicio(props) {
                         onClick={props.cambio(item.id)}
                         src={require("../img/productos/impresoras/" + item.img)}
                         alt=""
-                        class="img-fluid"
+                        className="img-fluid"
                       />
                     </Link>
                     <Link to="/detalle" onClick={props.cambio(item.id)}>
@@ -186,23 +193,23 @@ function Inicio(props) {
           </div>
         </div>
 
-        <div class="row my-5">
+        <div className="row my-5">
           <div
-            class="col-12 my-4 p-0 parallax fondoimg"
+            className="col-12 my-4 p-0 parallax fondoimg"
             style={{ backgroundImage: `url(${home_2})` }}
           >
             <div
-              class="total"
+              className="total"
               //   style={{ backgroundColor: rgba(0, 150, 199, 0.6) }}
             >
-              <div class="medio text-center">
+              <div className="medio text-center">
                 <img
                   src={logo_blanco}
                   alt="IDéntico"
-                  class="img-fluid"
+                  className="img-fluid"
                   style={{ width: "550px", backgroundPosition: "top" }}
                 />
-                <h1 class="text-white mt-4 mb-0">
+                <h1 className="text-white mt-4 mb-0">
                   Expertos en Identificación Segura
                 </h1>
               </div>
@@ -210,27 +217,27 @@ function Inicio(props) {
           </div>
         </div>
 
-        <div class="row my-5">
-          <div class="col-12 text-center">
+        <div className="row my-5">
+          <div className="col-12 text-center">
             <h1>Somos distribuidores</h1>
-            <img src={logo_fargo} alt="" class="img-fluid mx-2" />
-            <img src={logo_zebra} alt="" class="img-fluid mx-2" />
+            <img src={logo_fargo} alt="" className="img-fluid mx-2" />
+            <img src={logo_zebra} alt="" className="img-fluid mx-2" />
           </div>
         </div>
 
-        <div class="row justify-content-center my-5">
+        <div className="row justify-content-center my-5">
           <span id="contacto" />
-          <div class="col-12 text-center">
+          <div className="col-12 text-center">
             <h2>Nuestros clientes</h2>
           </div>
-          <div class="col-10 logos mb-4">
+          <div className="col-10 logos mb-4">
             <Slider {...settings}>
               {clientes.data.map(cliente => {
                 return (
-                  <div>
+                  <div key={cliente.id}>
                     <img
                       src={require("../img/clientes/" + cliente.name + ".png")}
-                      class="img-fluid mx-auto"
+                      className="img-fluid mx-auto"
                     />
                   </div>
                 );
