@@ -13,6 +13,8 @@ import logo_blanco from "../img/logo-blanco.png";
 import logo_zebra from "../img/logo-zebra.jpg";
 import logo_fargo from "../img/logo-fargo.jpg";
 
+import MasVendidos from "../components/MasVendidos";
+
 function Inicio(props) {
   AOS.init();
   const mas_vendidos = require("../json/vendidos.json");
@@ -100,53 +102,7 @@ function Inicio(props) {
               className="pestania"
             />
             <div className="row justify-content-center masVendidos mt-5 text-center">
-              {mas_vendidos.data.map(dato => {
-                return (
-                  <div
-                    key={dato.id}
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    className="col-md-4 mt-2 mb-4 p-4"
-                  >
-                    <div className="marco posr">
-                      <img
-                        src={require("../img/productos/impresoras/" + dato.img)}
-                        alt=""
-                        className="img-fluid"
-                      />
-
-                      <h5
-                        className="m-0 font-weight-bold"
-                        style={{ backgroundColor: "#fff" }}
-                      >
-                        <span className="py-5 py-xl-4 d-inline-block">
-                          {dato.nombre}
-                        </span>
-                      </h5>
-
-                      <div
-                        className="descripcion text-white "
-                        style={{ padding: 0 }}
-                      >
-                        <div className="total">
-                          <div className="medio">
-                            <p>{dato.descripcion}</p>
-                            <h3>{dato.nombre}</h3>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <Link
-                      className="btn btn-primary"
-                      to="/detalle"
-                      onClick={props.cambio(dato.id)}
-                      role="button"
-                    >
-                      Más información
-                    </Link>
-                  </div>
-                );
-              })}
+              <MasVendidos datos={mas_vendidos} />
             </div>
           </div>
         </div>
@@ -177,13 +133,16 @@ function Inicio(props) {
                     <Link to="/detalle">
                       <img
                         // src={home_1}
-                        onClick={props.cambio(item.id)}
+                        // onClick={props.cambio(item.id)}
                         src={require("../img/productos/impresoras/" + item.img)}
                         alt=""
                         className="img-fluid"
                       />
                     </Link>
-                    <Link to="/detalle" onClick={props.cambio(item.id)}>
+                    <Link
+                      to="/detalle"
+                      // onClick={props.cambio(item.id)}
+                    >
                       <p>{item.nombre}</p>
                     </Link>
                   </div>
