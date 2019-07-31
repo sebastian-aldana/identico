@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import AOS from "aos";
 
 import logo_zebra from "../../img/logo-zebra.jpg";
 import logo_datacard from "../../img/logo-datacard.jpg";
