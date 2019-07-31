@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo_zebra from "../../img/logo-zebra.jpg";
 import logo_fargo from "../../img/logo-fargo.jpg";
 
+import { Link } from "react-router-dom";
+
 import AOS from "aos";
 
 const Impresoras = () => {
@@ -57,20 +59,20 @@ const Impresoras = () => {
                   data-aos-duration="1000"
                   class="col-md-6 col-lg-3 text-center p-3 mb-5 pb-5"
                 >
-                  <a href="ling">
+                  <Link to={`/detalle:${data.nombre}`}>
                     <img
                       src={require("../../img/fotos_productos/" + data.img)}
                       alt=""
                       class="img-fluid"
                     />
-                  </a>
-                  <a href="link">
+                  </Link>
+                  <Link to={`/detalle:${data.nombre}`}>
                     <h6 class="bAculC">
                       <span class="py-4 d-inline-block text-white">
                         {data.nombre}
                       </span>
                     </h6>
-                  </a>
+                  </Link>
                 </div>
               </>
             );

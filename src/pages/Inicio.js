@@ -134,13 +134,14 @@ function Inicio(props) {
                       <img
                         // src={home_1}
                         // onClick={props.cambio(item.id)}
+                        to={`/detalle:${item.nombre}`}
                         src={require("../img/productos/impresoras/" + item.img)}
                         alt=""
                         className="img-fluid"
                       />
                     </Link>
                     <Link
-                      to="/detalle"
+                      to={`/detalle:${item.nombre}`}
                       // onClick={props.cambio(item.id)}
                     >
                       <p>{item.nombre}</p>

@@ -48,7 +48,7 @@ class Detalle extends React.Component {
                     </div>
                   </div>
                 </div>
-                ); }
+
                 <div class="row my-5">
                   <div
                     class="col-12 my-4 p-0 parallax fondoimg"
