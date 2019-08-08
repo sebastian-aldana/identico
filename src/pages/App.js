@@ -6,7 +6,7 @@ import Inicio from "./Inicio";
 import Nosotros from "./Nosotros";
 import Productos from "./Productos";
 import Servicios from "./Servicios";
-import NotFound from "./NotFound";
+import Not from "./NotFound";
 import Detalle from "./Detalle";
 import Blog from "./Blog";
 
@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/servicios" component={Servicios} />
           <Route exact path="/detalle:id" component={Detalle} />
           <Route exact path="/blog" component={Blog} />
-          <Route component={NotFound} />
+          <Route component={Not} />
         </Switch>
       </Layout>
     </HashRouter>
