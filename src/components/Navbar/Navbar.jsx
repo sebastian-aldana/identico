@@ -86,6 +86,11 @@ const Navbar = () => {
                   Servicios
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link to="/blog" className="nav-link">
+                  Blog
+                </Link>
+              </li>
               {/* <!-- <li className="nav-item"><a href="" className="nav-link">Blog</a></li> --> */}
               <li className="nav-item">
                 <a href="#contactanos" className="nav-link scroll">
