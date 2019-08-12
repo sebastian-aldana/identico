@@ -1,0 +1,44 @@
+.aside {
+  width: 33%;
+  float: right;
+  box-shadow: -3px 0px 5px black;
+  padding: 10px;
+  border-radius: 5px;
+}
+.redes-sociales {
+  margin-bottom: 20px;
+}
+.redes-sociales > a {
+  padding: 10px;
+}
+.redes-sociales > a > img {
+  width: 28%;
+
+  border-radius: 100%;
+}
+.redes-sociales > a > img:hover {
+  box-shadow: 10px 5px 5px black;
+}
+
+.clear {
+  clear: both;
+}
+.buscador > input {
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.publicaciones {
+  display: grid;
+  grid-template-columns: repeat(1fr, 2fr);
+}
+.publicaciones > img {
+  max-width: 100%;
+  grid-column: 1/2;
+  padding: 30px;
+}
+
+.resumen {
+  grid-column: 2/2;
+}
