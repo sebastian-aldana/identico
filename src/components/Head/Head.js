@@ -28,14 +28,14 @@ class Head extends React.Component {
           <link rel="icon" href={icon} type="image/x-icon" />
 
           <noscript>{`
-        <link rel="stylesheet" type="text/css" href="../../css/estilos.css" />
-          <link rel="stylesheet" type="text/css" href="../../css/custom_styles.css" />
+        <link  rel="preload  as="style" href="../../css/estilos.css" />
+          <link  rel="preload  as="style" href="../../css/custom_styles.css" />
         `}</noscript>
 
-          <script
+          {/* <script
             src="https://www.google.com/recaptcha/api.js"
             type="text/javascript"
-          />
+          /> */}
         </Helmet>
       </div>
     );

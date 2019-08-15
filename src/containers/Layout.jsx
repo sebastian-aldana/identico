@@ -11,10 +11,10 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const Layout = props => {
   return (
     <>
-      <Head />
       <Navbar />
       <Carrousel />
       {props.children}
+      <Head />
     </>
   );
 };
