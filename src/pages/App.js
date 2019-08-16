@@ -1,19 +1,19 @@
-import React, { lazy, Suspense } from "react";
-import { HashRouter, Switch, Route } from "react-router-dom";
-// import loadable from "@loadable/component";
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import loadable from "@loadable/component";
 
-const Layout = lazy(() => import("../containers/Layout"));
-const Inicio = lazy(() => import("./Inicio"));
-const Nosotros = lazy(() => import("./Nosotros"));
-const Productos = lazy(() => import("./Productos"));
-const Servicios = lazy(() => import("./Servicios"));
-const Detalle = lazy(() => import("./Detalle"));
-const Blog = lazy(() => import("./Blog"));
-const Not = lazy(() => import("./NotFound"));
+const Layout = loadable(() => import("../containers/Layout"));
+const Inicio = loadable(() => import("./Inicio"));
+const Nosotros = loadable(() => import("./Nosotros"));
+const Productos = loadable(() => import("./Productos"));
+const Servicios = loadable(() => import("./Servicios"));
+const Detalle = loadable(() => import("./Detalle"));
+const Blog = loadable(() => import("./Blog"));
+const Not = loadable(() => import("./NotFound"));
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
         <Layout>
           <Switch>
@@ -27,7 +27,7 @@ function App() {
           </Switch>
         </Layout>
       </Suspense>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
