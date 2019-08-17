@@ -9,9 +9,10 @@ module.exports = {
     index: path.resolve(__dirname, "src/index.js")
   },
   output: {
-    filename: "[name].js",
+    filename: "js/[name].js",
     chunkFilename: "[name].js",
-    path: path.resolve(__dirname, "identico")
+    path: path.resolve(__dirname, "identico"),
+    chunkFilename: "js/[id].js"
   },
   // output: {
   //   path: path.resolve(__dirname, "identico"),
@@ -107,7 +108,7 @@ module.exports = {
       file: "./index.html"
     }),
     new MiniCssExtractPlugin({
-      filename: "css/[name][hash].css",
+      filename: "css/[name].css",
       chunkFilename: "[id].css"
     })
   ],
