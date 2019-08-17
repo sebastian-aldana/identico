@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --config ./webpack.server.config.js",
+    "dev": "webpack-dev-server --config ./config.js",
     "build": "webpack --config ./config.js ",
     "build-dll": "webpack --config ./webpack.dll.config.js",
     "build-fast": "webpack --config ./webpack.config.js",
