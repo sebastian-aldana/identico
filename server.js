@@ -4,7 +4,8 @@ app.use(express.static("identico"));
 
 app.get("*", (req, res) => {
   console.log(req.url);
-  res.write(`Hola mundo desde ${req.url}`);
+  // res.write(`Hola mundo desde ${req.url}`);
+  res.sendFile(__dirname + "/identico/index.html");
   res.end();
 });
 
