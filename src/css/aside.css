@@ -7,17 +7,17 @@
 }
 .redes-sociales {
   margin-bottom: 20px;
+  text-align: center;
 }
 .redes-sociales > a {
-  padding: 10px;
+  padding: 5px;
 }
 .redes-sociales > a > img {
-  width: 28%;
-
-  border-radius: 100%;
+  width: 25%;
+  border-radius: 25%;
 }
 .redes-sociales > a > img:hover {
-  box-shadow: 10px 5px 5px black;
+  box-shadow: 10px 5px 5px #bababa;
 }
 
 .clear {
