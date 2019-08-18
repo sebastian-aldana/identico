@@ -4,16 +4,28 @@ const GridPost = () => {
   return (
     <>
       <div className="item">
-        <p>uno</p>
+        <div className="titulos">
+          <h6>Categoria</h6>
+          <p>Titulo</p>
+        </div>
       </div>
       <div className="item">
-        <p>dos</p>
+        <div className="titulos">
+          <h6>Categoria</h6>
+          <p>Titulo</p>
+        </div>
       </div>
       <div className="item">
-        <p>tres</p>
+        <div className="titulos">
+          <h6>Categoria</h6>
+          <p>Titulo</p>
+        </div>
       </div>
       <div className="item">
-        <p>cuatro</p>
+        <div className="titulos">
+          <h6>Categoria</h6>
+          <p>Tiyulo</p>
+        </div>
       </div>
     </>
   );
