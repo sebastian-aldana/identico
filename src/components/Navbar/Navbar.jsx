@@ -46,9 +46,9 @@ const Navbar = () => {
       </div>
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <a className="navbar-brand" href="index">
+          <Link className="navbar-brand" to="/">
             <img src={logo} alt="IDéntico" style={{ maxWidth: "197px" }} />
-          </a>
+          </Link>
 
           <button
             className="navbar-toggler"
