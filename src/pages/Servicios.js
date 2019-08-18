@@ -1,11 +1,14 @@
 import React from "react";
 
 import Lealtad from "../components/Lealtad/Lealtad";
-// import Ciclo from "../components/Ciclo";
-// import Botones from "../components/Botones";
+import Layout from "../containers/Layout";
 
 function Servicios() {
-  return <Lealtad />;
+  return (
+    <Layout>
+      <Lealtad />
+    </Layout>
+  );
 }
 
 export default Servicios;

@@ -2,6 +2,7 @@ import React from "react";
 
 import home_2 from "../img/home-2.jpg";
 import logo_blanco from "../img/logo-blanco.png";
+import Layout from "../containers/Layout";
 
 class Detalle extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class Detalle extends React.Component {
     const productos = require("../json/productos.json");
 
     return (
-      <>
+      <Layout>
         {productos.data.map(dato => {
           if (dato.nombre == id) {
             return (
@@ -77,7 +78,7 @@ class Detalle extends React.Component {
             );
           }
         })}
-      </>
+      </Layout>
     );
   }
 }

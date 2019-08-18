@@ -14,6 +14,7 @@ import logo_zebra from "../img/logo-zebra.jpg";
 import logo_fargo from "../img/logo-fargo.jpg";
 
 import MasVendidos from "../components/MasVendidos";
+import Layout from "../containers/Layout";
 
 function Inicio(props) {
   AOS.init();
@@ -88,7 +89,7 @@ function Inicio(props) {
   // }
 
   return (
-    <>
+    <Layout>
       <div className="container-fluid">
         <div className="row mt-4">
           <div
@@ -206,7 +207,7 @@ function Inicio(props) {
           </div>
         </div>
       </div>
-    </>
+    </Layout>
   );
 }
 

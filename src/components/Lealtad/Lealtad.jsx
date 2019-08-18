@@ -12,9 +12,6 @@ const Lealtad = () => {
   const handleClick = e => {
     e.preventDefault();
     console.log(e);
-
-    // setActive(id);
-    // setText(servicios.data[id]);
   };
 
   return (
@@ -41,8 +38,8 @@ const Lealtad = () => {
                 <a
                   className={
                     active === 0
-                      ? "nav-link total acti active"
-                      : "nav-link total"
+                      ? "nav-link total acti active centro"
+                      : "nav-link total centro"
                   }
                   id="lealtad-tab"
                   data-toggle="tab"
@@ -56,7 +53,7 @@ const Lealtad = () => {
                     setText(servicios.data[0]);
                   }}
                 >
-                  <span className="medio">
+                  <span>
                     PROGRAMA
                     <br />
                     DE LEALTAD
@@ -73,8 +70,8 @@ const Lealtad = () => {
                 <a
                   className={
                     active === 1
-                      ? "nav-link total acti active"
-                      : "nav-link total"
+                      ? "nav-link total acti active centro"
+                      : "nav-link total centro"
                   }
                   onClick={e => {
                     e.preventDefault();
@@ -83,7 +80,7 @@ const Lealtad = () => {
                   }}
                   href="identimovil#identimovil"
                 >
-                  <span className="medio">IDENTIMÓVIL</span>
+                  <span>IDENTIMÓVIL</span>
                 </a>
               </li>
               <li
@@ -96,8 +93,8 @@ const Lealtad = () => {
                 <a
                   className={
                     active === 2
-                      ? "nav-link total acti active"
-                      : "nav-link total"
+                      ? "nav-link total acti active centro"
+                      : "nav-link total centro"
                   }
                   onClick={e => {
                     e.preventDefault();
@@ -106,7 +103,7 @@ const Lealtad = () => {
                   }}
                   href="identinet#identinet"
                 >
-                  <span className="medio">IDÉNTINET</span>
+                  <span>IDÉNTINET</span>
                 </a>
               </li>
               <li
@@ -119,8 +116,8 @@ const Lealtad = () => {
                 <a
                   className={
                     active === 3
-                      ? "nav-link total acti active"
-                      : "nav-link total"
+                      ? "nav-link total acti active centro"
+                      : "nav-link total centro"
                   }
                   onClick={e => {
                     e.preventDefault();
@@ -129,7 +126,7 @@ const Lealtad = () => {
                   }}
                   href="mantenimineto-correctivo-y-preventivo#mantenimiento"
                 >
-                  <span className="medio">
+                  <span>
                     MANTENIMIENTO
                     <br />
                     CORRECTIVO Y<br />
