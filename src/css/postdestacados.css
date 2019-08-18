@@ -1,0 +1,33 @@
+.destacados-container {
+  display: grid;
+  grid-template-columns: [inicio] 0.5fr [dos]2fr[tres] 0.5fr [fin];
+  grid-template-rows: [inicio]0.3fr [dos]1fr [tres] 1fr [cuatro] 1fr [fin];
+  grid-gap: 5px;
+  height: 100%;
+}
+
+.destacados-title {
+  grid-column: inicio / fin;
+}
+
+.imagen {
+  grid-column: inicio / dos;
+  grid-row: dos/tres;
+  background-image: url("../post/uno.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 25%;
+}
+
+.boton {
+  grid-column: tres/fin;
+  grid-row: dos/tres;
+  position: relative;
+}
+
+.boton-position {
+  height: 5vh;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+}
