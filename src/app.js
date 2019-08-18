@@ -9,6 +9,7 @@ const Productos = loadable(() => import("./pages/Productos"));
 const Servicios = loadable(() => import("./pages/Servicios"));
 const Detalle = loadable(() => import("./pages/Detalle"));
 const Blog = loadable(() => import("./pages/Blog"));
+const Articulo = loadable(() => import("./pages/Articulo"));
 const Not = loadable(() => import("./pages/NotFound"));
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route exact path="/servicios" component={Servicios} />
       <Route exact path="/detalle:id" component={Detalle} />
       <Route exact path="/blog" component={Blog} />
+      <Route exact path="/articulo" component={Articulo} />
       <Route component={Not} />
     </Switch>
     // </Layout>
