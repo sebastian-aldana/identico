@@ -52,28 +52,28 @@
   grid-column: inicio / medio;
   grid-row: inicio/ fin;
   background-image: url("../post/uno.jpg");
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .item:nth-of-type(2) {
   grid-column: medio / fin;
   grid-row: inicio/ medio;
   background-image: url("../post/dos.jpg");
-  font-size: 40px;
+  font-size: 25px;
 }
 
 .item:nth-of-type(3) {
   grid-column: medio/ cuatro;
   grid-row: medio/fin;
   background-image: url("../post/tres.jpg");
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .item:nth-of-type(4) {
   grid-column: cuatro/ fin;
   grid-row: medio/fin;
   background-image: url("../post/cuatro.png");
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .titulos {
