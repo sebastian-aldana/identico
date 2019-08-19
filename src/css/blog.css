@@ -17,7 +17,8 @@
   height: 105vh;
 }
 
-.destacados {
+.destacados,
+.cuerpo {
   grid-column: inicio/aside;
   grid-row: inicio/fin;
 }

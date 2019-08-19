@@ -7,21 +7,24 @@ import Cuerpo from "../components/Articulo/Cuerpo";
 
 import "../css/blog.css";
 
-const Articulo = () => {
-  return (
-    <div className="background-gradient">
-      <Navbar />
-      <div className="section " />
-      <Titulo />
-      <div className="section">
-        <div className="section-container">
-          <Cuerpo />
-          <Aside />
+class Articulo extends React.Component {
+  render() {
+    var id = this.props.match.params.id;
+    var id = id.replace(":", "");
+    return (
+      <div className="background-gradient">
+        <Navbar />
+        {/* <Titulo /> */}
+        <div className="section">
+          <div className="section-container">
+            <Cuerpo id={id} />
+            <Aside />
+          </div>
         </div>
+        <Head />
       </div>
-      <Head />
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Articulo;
