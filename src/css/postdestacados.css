@@ -11,17 +11,12 @@
 }
 
 .imagen {
-  grid-column: inicio / dos;
-  grid-row: dos/tres;
-  background-image: url("../post/uno.jpg");
   background-size: cover;
   background-position: center;
   border-radius: 25%;
 }
 
 .boton {
-  grid-column: tres/fin;
-  grid-row: dos/tres;
   position: relative;
 }
 
@@ -30,4 +25,8 @@
   font-size: 15px;
   position: absolute;
   bottom: 0;
+}
+
+.texto {
+  flex-direction: column;
 }

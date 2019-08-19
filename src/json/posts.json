@@ -3,21 +3,25 @@
     {
       "id": 1,
       "title": "Cuál es la importancia de los sistemas de control de acceso en las empresas.",
+      "url": "cuál-es-la-importancia-de-los-sistemas-de-control-de-acceso-en-las-empresas",
       "categoria": "seguridad"
     },
     {
       "id": 2,
       "title": "Las cámaras de seguridad son el aliado ideal para su sistema de vigilancia.",
+      "url": "las-cámaras-de-seguridad-son-el-aliado-ideal-para-su-sistema-de-vigilancia",
       "categoria": "seguridad"
     },
     {
       "id": 3,
       "title": "Impresoras de credenciales para una identificación segura en la empresa",
+      "url": "impresoras-de-credenciales-para-una-identificación-segura-en-la-empresa",
       "categoria": "seguridad"
     },
     {
       "id": 4,
-      "title": "Ventajas del control de accesos en colegios y universidade",
+      "title": "Ventajas del control de accesos en colegios y universidades",
+      "url": "ventajas-del-control-de-accesos-en-colegios-y-universidades",
       "categoria": "seguridad"
     }
   ]

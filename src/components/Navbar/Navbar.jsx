@@ -3,6 +3,7 @@ import llamada from "../../img/llamada.png";
 import logo from "../../img/logo.png";
 
 import { Link } from "react-router-dom";
+import Search from "./Search";
 
 const Navbar = () => {
   return (
@@ -117,11 +118,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <form className="busqueda d-none d-lg-block" action="resultados">
-            <fieldset className="search-footer">
-              <input id="search-box" type="text" name="buscar" />
-            </fieldset>
-          </form>
+          <Search />
         </div>
       </nav>
 

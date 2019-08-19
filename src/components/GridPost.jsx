@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const GridPost = () => {
   const post = require("../json/posts.json");
@@ -9,7 +10,9 @@ const GridPost = () => {
           <div className="item">
             <div className="titulos" key={dato.id}>
               <h6>{dato.categoria}</h6>
-              <p>{dato.title}</p>
+              <Link to={`/articulo:${dato.url}`}>
+                <p className="link">{dato.title}</p>
+              </Link>
             </div>
           </div>
         );

@@ -4,6 +4,7 @@
   /* box-shadow: -3px 0px 5px black; */
   /* padding: 10px; */
   border-radius: 5px;
+  text-align: center;
 }
 .redes-sociales {
   margin-bottom: 20px;
@@ -41,4 +42,8 @@
 
 .resumen {
   grid-column: 2/2;
+}
+
+#search-box:hover {
+  width: 200px;
 }
