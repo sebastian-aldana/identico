@@ -1,0 +1,12 @@
+.articulo-titulo > h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.articulo-titulo {
+  padding: 20px;
+}
+.articulo-titulo > img {
+  border-radius: 30px;
+}
