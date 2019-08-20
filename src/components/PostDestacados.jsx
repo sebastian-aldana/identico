@@ -18,13 +18,7 @@ const PostDestacados = () => {
               />
               <div className="texto centro">
                 <h5>{post.title}</h5>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolorem laboriosam cupiditate atque quas veniam dolor
-                  temporibus quidem debitis doloremque itaque? Vero,
-                  perferendis. Odio pariatur nihil veritatis corrupti aspernatur
-                  dignissimos doloremque.
-                </p>
+                <p>{post.description}</p>
               </div>
               <div className="boton">
                 <Link

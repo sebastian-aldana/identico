@@ -18,7 +18,9 @@ class Articulo extends React.Component {
         <div className="section">
           <div className="section-container">
             <Cuerpo id={id} />
-            <Aside />
+            <div className="aside-2">
+              <Aside />
+            </div>
           </div>
         </div>
         <Head />
