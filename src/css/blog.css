@@ -62,28 +62,28 @@
 .item:nth-of-type(1) {
   grid-column: inicio / medio;
   grid-row: inicio/ fin;
-  background-image: url("../post/uno.jpg");
+  background-image: url("../post/1.jpg");
   font-size: 40px;
 }
 
 .item:nth-of-type(2) {
   grid-column: medio / fin;
   grid-row: inicio/ medio;
-  background-image: url("../post/dos.jpg");
+  background-image: url("../post/2.jpg");
   font-size: 25px;
 }
 
 .item:nth-of-type(3) {
   grid-column: medio/ cuatro;
   grid-row: medio/fin;
-  background-image: url("../post/tres.jpg");
+  background-image: url("../post/3.jpg");
   font-size: 20px;
 }
 
 .item:nth-of-type(4) {
   grid-column: cuatro/ fin;
   grid-row: medio/fin;
-  background-image: url("../post/cuatro.png");
+  background-image: url("../post/4.jpg");
   font-size: 20px;
 }
 
@@ -92,15 +92,19 @@
   flex-direction: column;
   position: absolute;
   bottom: 0;
-  padding-left: 30px;
+  padding: 30px;
+  justify-content: flex-end;
+  background: rgba(0, 24, 68, 0.5);
+  height: 100%;
 }
 
 .titulos h6 {
   background-color: #4a84b9;
   width: 6vw;
+  padding: 5px;
   color: #fafafa;
 }
 
 .aside-2 {
-  grid-column: dos / fin;
+  grid-column: tres / fin;
 }
