@@ -17,7 +17,11 @@ const Titulo = props => {
                 <p>{post.description}</p>
                 <img src={require("../../post/" + post.img)} alt="" />
               </div>
-              <p>{post.post}</p>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: `${post.post}`
+                }}
+              />
             </div>
           );
         }
