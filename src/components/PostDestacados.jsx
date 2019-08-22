@@ -12,10 +12,9 @@ const PostDestacados = () => {
         {post.data.map(post => {
           return (
             <>
-              <div
-                className="imagen"
-                style={{ backgroundImage: `url(${image})` }}
-              />
+              <div className="imagen">
+                <img src={require("../post/" + post.img)} alt="" />
+              </div>
               <div className="texto centro">
                 <h5>{post.title}</h5>
                 <p>{post.description}</p>

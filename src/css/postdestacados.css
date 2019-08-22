@@ -12,11 +12,13 @@
 .destacados-title {
   grid-column: inicio / fin;
 }
-
 .imagen {
-  background-size: cover;
-  background-position: center;
-  border-radius: 25%;
+  text-align: center;
+  padding: 10px;
+}
+.imagen > img {
+  border-radius: 2em;
+  width: 1fr;
 }
 
 .boton {
