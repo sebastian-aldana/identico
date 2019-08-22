@@ -42,11 +42,18 @@
 
 .item {
   border-radius: 20px;
-  border: 1.5px solid #4a84b9;
   /* background-color:&& yellow; */
   background-size: cover;
   background-position: center;
   position: relative;
+}
+.item:hover {
+  -webkit-transform: scale(0.99);
+  transform: scale(0.99);
+  box-shadow: 10px 10px 10px #314558;
+}
+.item {
+  overflow: hidden;
 }
 
 .link {

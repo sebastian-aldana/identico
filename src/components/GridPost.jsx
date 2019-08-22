@@ -7,14 +7,16 @@ const GridPost = () => {
     <>
       {post.data.map(dato => {
         return (
-          <div className="item">
-            <div className="titulos" key={dato.id}>
-              <h6>{dato.categoria}</h6>
-              <Link to={`/articulo:${dato.url}`}>
-                <p className="link">{dato.title}</p>
-              </Link>
+          <>
+            <div className="item">
+              <div className="titulos" key={dato.id}>
+                <h6>{dato.categoria}</h6>
+                <Link to={`/articulo:${dato.url}`}>
+                  <p className="link">{dato.title}</p>
+                </Link>
+              </div>
             </div>
-          </div>
+          </>
         );
       })}
       {/* <div className="item">
