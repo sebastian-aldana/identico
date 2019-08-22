@@ -14,7 +14,6 @@
   grid-template-rows: [inicio] 1fr [fin];
   grid-gap: 20px;
   margin-top: 5vh;
-  height: 105vh;
 }
 
 .destacados,
