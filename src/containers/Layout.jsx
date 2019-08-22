@@ -7,6 +7,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import $ from "jquery";
 import Popper from "popper.js";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import Footer from "../components/Footer/Footer";
 
 const Layout = props => {
   return (
@@ -15,6 +16,7 @@ const Layout = props => {
       <Carrousel />
       {props.children}
       <Head />
+      <Footer />
     </>
   );
 };
