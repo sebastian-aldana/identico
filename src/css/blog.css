@@ -42,7 +42,7 @@
 
 .item {
   border-radius: 20px;
-  /* background-color:&& yellow; */
+  border: 1.5px solid #4a84b9;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -100,6 +100,7 @@
 .titulos h6 {
   background-color: #4a84b9;
   width: 6vw;
+  color: #fafafa;
 }
 
 .aside-2 {

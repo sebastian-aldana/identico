@@ -7,42 +7,14 @@ const GridPost = () => {
     <>
       {post.data.map(dato => {
         return (
-          <>
-            <div className="item">
-              <div className="titulos" key={dato.id}>
-                <h6>{dato.categoria}</h6>
-                <Link to={`/articulo:${dato.url}`}>
-                  <p className="link">{dato.title}</p>
-                </Link>
-              </div>
+          <Link className="item" to={`/articulo:${dato.url}`}>
+            <div className="titulos" key={dato.id}>
+              <h6>{dato.category}</h6>
+              <p className="link">{dato.title}</p>
             </div>
-          </>
+          </Link>
         );
       })}
-      {/* <div className="item">
-        <div className="titulos">
-          <h6>Categoria</h6>
-          <p>Titulo</p>
-        </div>
-      </div>
-      <div className="item">
-        <div className="titulos">
-          <h6>Categoria</h6>
-          <p>Titulo</p>
-        </div>
-      </div>
-      <div className="item">
-        <div className="titulos">
-          <h6>Categoria</h6>
-          <p>Titulo</p>
-        </div>
-      </div>
-      <div className="item">
-        <div className="titulos">
-          <h6>Categoria</h6>
-          <p>Tiyulo</p>
-        </div>
-      </div> */}
     </>
   );
 };
