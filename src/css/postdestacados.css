@@ -6,6 +6,10 @@
   height: 100%;
 }
 
+.destacados-container * {
+  max-height: 25vh;
+}
+
 .destacados-title {
   grid-column: inicio / fin;
 }
