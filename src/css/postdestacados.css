@@ -6,7 +6,11 @@
 }
 
 .destacados-container * {
-  max-height: 25vh;
+  max-height: 35vh;
+}
+
+.destacados-container img {
+  max-height: 15vh;
 }
 
 .destacados-title {

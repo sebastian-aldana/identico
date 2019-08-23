@@ -10,22 +10,20 @@
 .section-container {
   max-width: 1100px;
   display: grid;
-  grid-template-columns: [inicio] 1fr [dos]1fr 1fr [aside] 1fr[fin];
-  grid-template-rows: [inicio] 1fr [fin];
-  grid-gap: 20px;
+  grid-template-columns: 1.5fr 0.5fr;
+  grid-gap: 5%;
   margin-top: 5vh;
 }
 
-.destacados,
 .cuerpo {
   grid-column: inicio/aside;
   grid-row: inicio/fin;
 }
 
-.aside {
+/* .aside {
   grid-column: aside/fin;
   grid-row: inicio/fin;
-}
+} */
 
 .grid-post-container {
   display: grid;

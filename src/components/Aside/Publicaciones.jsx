@@ -7,14 +7,14 @@ const Publicaciones = () => {
     <>
       {post.data.map(dato => {
         return (
-          <Link to={`/articulo:${dato.url}`}>
-            <div className="publicaciones">
-              <img src={require("../../post/" + dato.img)} alt="" />
+          <div className="publicaciones">
+            <img src={require("../../post/" + dato.img)} alt="" />
+            <Link to={`/articulo:${dato.url}`}>
               <div className="resumen">
                 <h2>{dato.title}</h2>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         );
       })}
     </>
