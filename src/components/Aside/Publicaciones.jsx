@@ -5,6 +5,7 @@ const Publicaciones = () => {
   const post = require("../../json/posts.json");
   return (
     <>
+      <h3>Ultimas publicaciones</h3>
       {post.data.map(dato => {
         return (
           <div className="publicaciones">

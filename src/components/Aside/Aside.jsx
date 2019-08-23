@@ -8,7 +8,7 @@ const Aside = () => {
   return (
     <div className="aside">
       <Redes />
-      <Search />
+      {/* <Search /> */}
       <Publicaciones />
     </div>
   );

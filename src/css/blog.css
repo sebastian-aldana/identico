@@ -46,7 +46,7 @@
 .item:hover {
   -webkit-transform: scale(0.99);
   transform: scale(0.99);
-  box-shadow: 10px 10px 10px #314558;
+  box-shadow: 10px 10px 10px #c2c2c2;
 }
 .item {
   overflow: hidden;
