@@ -31,3 +31,10 @@
   font-size: 15px;
   text-align: left;
 }
+@media screen and (max-width: 1000px) {
+  .publicaciones > img {
+    width: 20%;
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+}

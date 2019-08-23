@@ -102,3 +102,54 @@
   padding: 5px;
   color: #fafafa;
 }
+@media screen and (max-width: 1000px) {
+  .section-container {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 2fr;
+    margin-top: 100vh;
+  }
+  .grid-post-container {
+    max-width: 800px;
+    grid-template-rows: [inicio] 1fr [medio] 1fr[cuarto]1fr[fin]1fr;
+  }
+  .item:nth-of-type(1) {
+    grid-column: inicio / fin;
+    height: 300px;
+    grid-row: inicio/ inicio;
+    background-image: url("../post/1.jpg");
+    font-size: 40px;
+  }
+  .item:nth-of-type(2) {
+    grid-column: inicio / fin;
+    height: 300px;
+    grid-row: medio/ medio;
+    background-image: url("../post/2.jpg");
+    font-size: 25px;
+  }
+  .item:nth-of-type(3) {
+    grid-column: inicio/ fin;
+    height: 300px;
+    grid-row: cuarto/cuarto;
+    background-image: url("../post/3.jpg");
+    font-size: 20px;
+  }
+  .item:nth-of-type(4) {
+    grid-column: inicio/ fin;
+    height: 300px;
+    grid-row: fin/fin;
+    background-image: url("../post/4.jpg");
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .grid-post-container {
+    max-width: 600px;
+  }
+  .section-container {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 2fr;
+    margin-top: 100vh;
+  }
+}

@@ -40,3 +40,11 @@
 .texto {
   flex-direction: column;
 }
+@media screen and (max-width: 1000px) {
+  .destacados-container {
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: [inicio]0.3fr [dos]1fr [tres] 1fr [cuatro] 1fr [fin];
+    grid-gap: 5px;
+  }
+}
