@@ -27,6 +27,10 @@
 
 .boton {
   position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .boton-position {
@@ -46,5 +50,11 @@
   }
   .destacados-container * {
     max-height: 100%;
+  }
+  .boton {
+    height: 5vh;
+  }
+  .boton a {
+    width: 100%;
   }
 }
