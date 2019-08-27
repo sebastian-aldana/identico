@@ -98,7 +98,7 @@
 
 .titulos h6 {
   background-color: #4a84b9;
-  width: 6vw;
+  width: 50%;
   padding: 5px;
   color: #fafafa;
 }
@@ -108,6 +108,9 @@
     display: grid;
     grid-template-columns: 2fr;
     grid-gap: 0;
+  }
+  .item {
+    font-size: 20px !important ;
   }
   .grid-post-container {
     max-width: 70vw;

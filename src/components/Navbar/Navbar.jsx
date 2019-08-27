@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import llamada from "../../img/llamada.png";
 import logo from "../../img/logo.png";
 import { HashLink } from "react-router-hash-link";
 
-import { Link } from "react-router-dom";
 import Search from "./Search";
 
 const Navbar = () => {
+  const [active, setActive] = useState(true);
+  const scroll = () => window.scrollTo(0, 300);
+  const top = () => window.scrollTo(0, 0);
+  const toggle = () => {
+    setActive(!active);
+  };
   return (
     <>
       <div
@@ -48,7 +53,7 @@ const Navbar = () => {
       </div>
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <HashLink className="navbar-brand" to="/">
+          <HashLink className="navbar-brand" onClick={top} to="/">
             <img src={logo} alt="IDéntico" style={{ maxWidth: "197px" }} />
           </HashLink>
 
@@ -58,7 +63,7 @@ const Navbar = () => {
             data-toggle="collapse"
             data-target="#navbarResponsive"
             aria-controls="navbarResponsive"
-            aria-expanded="false"
+            aria-expanded={active}
             aria-label="Toggle navigation"
           >
             <span className="cAzulM">
@@ -66,36 +71,48 @@ const Navbar = () => {
             </span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarResponsive">
+          <div
+            className={
+              active
+                ? "collapsing navbar-collapse  "
+                : " collapse navbar-collapse "
+            }
+            id="navbarResponsive"
+          >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <HashLink to="/" className="nav-link">
+                <HashLink to="/" onClick={top} className="nav-link">
                   Inicio
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink to="/nosotros" className="nav-link">
+                <HashLink to="/nosotros" onClick={scroll} className="nav-link">
                   Quiénes Somos
                 </HashLink>
               </li>
               <li className="nav-item">
-                <Link to="/productos" className="nav-link">
+                <HashLink to="/productos" onClick={scroll} className="nav-link">
                   Productos
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink to="/servicios" className="nav-link">
+                <HashLink to="/servicios" onClick={scroll} className="nav-link">
                   Servicios
                 </HashLink>
               </li>
               <li className="nav-item">
-                <HashLink to="/blog" className="nav-link">
+                <HashLink to="/blog" onClick={top} className="nav-link">
                   Blog
                 </HashLink>
               </li>
               {/* <!-- <li className="nav-item"><a href="" className="nav-link">Blog</a></li> --> */}
               <li className="nav-item">
-                <HashLink to="/#contactanos" className="nav-link scroll">
+                <HashLink
+                  smooth
+                  onClick={toggle}
+                  to="#contactanos"
+                  className="nav-link scroll"
+                >
                   Contacto
                 </HashLink>
               </li>
