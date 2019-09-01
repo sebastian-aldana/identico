@@ -7,13 +7,14 @@ import Layout from "../containers/Layout";
 class Detalle extends React.Component {
   render() {
     var id = this.props.match.params.id;
-    var id = id.replace(":", "");
+    // var id = id.replace(":", "");
     console.log(id);
 
     const productos = require("../json/productos.json");
 
     return (
       <Layout>
+        {/* <h1>{id}</h1> */}
         {productos.data.map(dato => {
           if (dato.nombre == id) {
             return (

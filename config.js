@@ -88,7 +88,7 @@ module.exports = {
           options: {
             limit: 10000,
             fallback: "file-loader",
-            name: "images/[name].[hash].[ext]"
+            name: "images/[name].[ext]"
           }
         }
       }
@@ -111,12 +111,12 @@ module.exports = {
       filename: "css/[name].css",
       chunkFilename: "[id].css"
     })
-  ],
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-      minSize: 10,
-      name: "commons"
-    }
-  }
+  ]
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: "all",
+  //     minSize: 10,
+  //     name: "commons"
+  //   }
+  // }
 };

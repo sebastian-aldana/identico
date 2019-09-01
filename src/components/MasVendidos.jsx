@@ -48,7 +48,7 @@ const Item = props => {
       </div>
       <Link
         className="btn btn-primary"
-        to={`/detalle:${props.dato.nombre}`}
+        to={`/detalle/${props.dato.nombre}`}
         // onClick={props.state(props.dato.id)}
         role="button"
       >

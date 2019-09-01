@@ -7,7 +7,8 @@ const Inicio = loadable(() => import("./pages/Inicio"));
 const Nosotros = loadable(() => import("./pages/Nosotros"));
 const Productos = loadable(() => import("./pages/Productos"));
 const Servicios = loadable(() => import("./pages/Servicios"));
-const Detalle = loadable(() => import("./pages/Detalle"));
+// const Detalle = loadable(() => import("./pages/Detalle"));
+import Detalle from "./pages/Detalle";
 const Blog = loadable(() => import("./pages/Blog"));
 const Articulo = loadable(() => import("./pages/Articulo"));
 const Not = loadable(() => import("./pages/NotFound"));
@@ -21,7 +22,7 @@ function App() {
       <Route exact path="/nosotros" component={Nosotros} />
       <Route exact path="/productos" component={Productos} />
       <Route exact path="/servicios" component={Servicios} />
-      <Route exact path="/detalle:id" component={Detalle} />
+      <Route exact path="/detalle/:id" component={Detalle} />
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/articulo:id" component={Articulo} />
       <Route component={Not} />
