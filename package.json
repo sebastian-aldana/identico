@@ -7,12 +7,14 @@
     "dev": "webpack-dev-server --config ./config.js",
     "build": "webpack --config ./config.js ",
     "build-dll": "webpack --config ./webpack.dll.config.js",
-    "build-fast": "webpack --config ./webpack.config.js"
+    "build-fast": "webpack --config ./webpack.config.js",
+    "start-env": "nodemon src/server/index.js --exact babel-node"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/register": "^7.5.5",
     "@babel/runtime": "^7.5.5",
     "@loadable/component": "^5.10.2",
     "aos": "^3.0.0-beta.6",
