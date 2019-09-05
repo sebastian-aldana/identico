@@ -5,7 +5,7 @@ const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: path.resolve(__dirname, "src/index.js")
   },
@@ -13,7 +13,8 @@ module.exports = {
     filename: "js/[name].js",
     chunkFilename: "[name].js",
     path: path.resolve(__dirname, "identico"),
-    chunkFilename: "js/[id].js"
+    chunkFilename: "js/[id].js",
+    publicPath: "/"
   },
   // output: {
   //   path: path.resolve(__dirname, "identico"),
