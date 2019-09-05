@@ -7,10 +7,7 @@
     "dev": "webpack-dev-server --config ./config.js",
     "build": "webpack --config ./config.js ",
     "build-dll": "webpack --config ./webpack.dll.config.js",
-    "build-fast": "webpack --config ./webpack.config.js",
-    "build-server": "webpack --config ./webpack.server.config.js",
-    "build-server-dll": "webpack --config ./webpack.server.dll.js",
-    "build-express": "@babel-node ./server.js --presets @babel/preset-env,@babel/preset-react"
+    "build-fast": "webpack --config ./webpack.config.js"
   },
   "keywords": [],
   "author": "",

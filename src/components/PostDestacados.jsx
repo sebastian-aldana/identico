@@ -22,7 +22,7 @@ const PostDestacados = () => {
               <div className="boton">
                 <Link
                   className="btn btn-primary boton-position "
-                  to={`/articulo:${post.url}`}
+                  to={`/articulo/${post.url}`}
                   role="button"
                 >
                   <p>Más información</p>
