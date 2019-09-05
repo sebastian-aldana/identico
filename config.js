@@ -2,6 +2,7 @@ const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
+const autoprefixer = require("autoprefixer");
 
 module.exports = {
   mode: "development",
@@ -20,6 +21,29 @@ module.exports = {
   // },
   resolve: {
     extensions: [".js", ".jsx", ".styl"]
+  },
+  optimization: {
+    splitChunks: {
+      chunks: "async",
+      name: true,
+      cacheGroups: {
+        vendors: {
+          name: "vendors",
+          chunks: "all",
+          reuseExistingChunk: true,
+          priority: 1,
+          filename: "assets/vendor.js",
+          enforce: true,
+          test(module, chunks) {
+            const name = module.nameForCondition && module.nameForCondition();
+            return chunks.some(
+              chunks =>
+                chunks.name !== "vendor" && /[\\/]node_modules[\\/]/.test(name)
+            );
+          }
+        }
+      }
+    }
   },
   module: {
     rules: [
@@ -60,7 +84,8 @@ module.exports = {
             options: {
               import: true
             }
-          }
+          },
+          "postcss-loader"
         ]
       },
       {
@@ -102,6 +127,11 @@ module.exports = {
     historyApiFallback: true
   },
   plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        postcss: [autoprefixer()]
+      }
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebPackPlugin({
       template: "./public/index.html",
@@ -112,11 +142,4 @@ module.exports = {
       chunkFilename: "[id].css"
     })
   ]
-  // optimization: {
-  //   splitChunks: {
-  //     chunks: "all",
-  //     minSize: 10,
-  //     name: "commons"
-  //   }
-  // }
 };
