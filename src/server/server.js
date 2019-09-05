@@ -29,7 +29,24 @@ if (ENV === "development") {
   app.use(webpackHotMiddleware(compiler));
 }
 app.get("*", (req, res) => {
-  res.send({ holamundo: true });
+  res.send(`
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+    <link rel="stylesheet" href="css/vendors.app.css" type="text/css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="assets/app.js"></script>
+    <script src="assets/vendor.js"></script>
+  </body>
+</html>  
+  `);
 });
 
 app.listen(PORT, err => {

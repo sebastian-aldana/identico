@@ -1,20 +1,19 @@
 const path = require("path");
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: path.resolve(__dirname, "src/index.js")
   },
   output: {
-    filename: "assets/app.js",
-    // chunkFilename: "[name].js",
-    // path: "/",
-    path: path.resolve(__dirname, "/"),
-    // chunkFilename: "js/[id].js",
-    // chunkFilename: "js/[id].js",
+    filename: "js/[name].js",
+    chunkFilename: "[name].js",
+    path: path.resolve(__dirname, "identico"),
+    chunkFilename: "js/[id].js",
     publicPath: "/"
   },
   // output: {
@@ -63,14 +62,14 @@ module.exports = {
       //   test: /\.json$/,
       //   loader: "file-loader"
       // },
-      // {
-      //   test: /\.html$/,
-      //   use: [
-      //     {
-      //       loader: "html-loader"
-      //     }
-      //   ]
-      // },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      },
       {
         test: /\.css$/,
         use: [
@@ -135,9 +134,13 @@ module.exports = {
       }
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebPackPlugin({
+      template: "./public/index.html",
+      file: "./index.html"
+    }),
     new MiniCssExtractPlugin({
-      filename: "css/app.css"
-      // chunkFilename: "[id].css"
+      filename: "css/[name].css",
+      chunkFilename: "[id].css"
     })
   ]
 };
