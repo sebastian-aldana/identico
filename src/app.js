@@ -2,14 +2,14 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import loadable from "@loadable/component";
 
-import Inicio from "./pages/Inicio";
-import Nosotros from "./pages/Nosotros";
-import Productos from "./pages/Productos";
-import Servicios from "./pages/Servicios";
-import Detalle from "./pages/Detalle";
-import Blog from "./pages/Blog";
-import Articulo from "./pages/Articulo";
-import Not from "./pages/NotFound";
+import Inicio from "./frontend/pages/Inicio";
+import Nosotros from "./frontend/pages/Nosotros";
+import Productos from "./frontend/pages/Productos";
+import Servicios from "./frontend/pages/Servicios";
+import Detalle from "./frontend/pages/Detalle";
+import Blog from "./frontend/pages/Blog";
+import Articulo from "./frontend/pages/Articulo";
+import Not from "./frontend/pages/NotFound";
 
 function App() {
   return (
