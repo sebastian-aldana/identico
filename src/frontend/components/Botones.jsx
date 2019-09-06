@@ -7,7 +7,6 @@ const HelloWorld = () => {
     e.preventDefault();
 
     setActive(!active);
-    console.log(active);
   };
   return (
     <ul

@@ -12,8 +12,6 @@ const MasVendidos = props => {
 };
 
 const Item = props => {
-  console.log(props.dato.id);
-
   return (
     <div
       key={props.dato.id}

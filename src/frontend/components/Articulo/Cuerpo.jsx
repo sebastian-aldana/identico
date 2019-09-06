@@ -3,7 +3,6 @@ import Uno from "../../post/uno.jpg";
 import "../../css/articulo.css";
 
 const Titulo = props => {
-  console.log(props.id);
   const posts = require("../../json/posts.json");
 
   return (
