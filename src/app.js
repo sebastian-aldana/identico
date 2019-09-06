@@ -2,14 +2,14 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import loadable from "@loadable/component";
 
-import Inicio from "./frontend/pages/Inicio";
-import Nosotros from "./frontend/pages/Nosotros";
-import Productos from "./frontend/pages/Productos";
-import Servicios from "./frontend/pages/Servicios";
-import Detalle from "./frontend/pages/Detalle";
-import Blog from "./frontend/pages/Blog";
-import Articulo from "./frontend/pages/Articulo";
-import Not from "./frontend/pages/NotFound";
+const Inicio = loadable(() => import("./frontend/pages/Inicio"));
+const Nosotros = loadable(() => import("./frontend/pages/Nosotros"));
+const Productos = loadable(() => import("./frontend/pages/Productos"));
+const Servicios = loadable(() => import("./frontend/pages/Servicios"));
+const Detalle = loadable(() => import("./frontend/pages/Detalle"));
+const Blog = loadable(() => import("./frontend/pages/Blog"));
+const Articulo = loadable(() => import("./frontend/pages/Articulo"));
+const Not = loadable(() => import("./frontend/pages/NotFound"));
 
 function App() {
   return (
@@ -18,7 +18,8 @@ function App() {
       <Route exact path="/nosotros" component={Nosotros} />
       <Route exact path="/productos" component={Productos} />
       <Route exact path="/servicios" component={Servicios} />
-      <Route exact path="/detalle/:id" component={Detalle} />
+      <Route exact path="/productos/consumibles/:id" component={Detalle} />
+      <Route exact path="/productos/impresoras/:id" component={Detalle} />
       <Route exact path="/blog" component={Blog} />
       <Route exact path="/articulo/:id" component={Articulo} />
       <Route component={Not} />

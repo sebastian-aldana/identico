@@ -132,7 +132,7 @@ function Inicio(props) {
                     data-aos-duration="1000"
                     className="text-center px-2"
                   >
-                    <Link to="/detalle">
+                    <div>
                       <img
                         // src={home_1}
                         // onClick={props.cambio(item.id)}
@@ -141,9 +141,9 @@ function Inicio(props) {
                         alt=""
                         className="img-fluid"
                       />
-                    </Link>
+                    </div>
                     <Link
-                      to={`/detalle/${item.nombre}`}
+                      to={`/productos/impresoras/${item.nombre}`}
                       // onClick={props.cambio(item.id)}
                     >
                       <p>{item.nombre}</p>

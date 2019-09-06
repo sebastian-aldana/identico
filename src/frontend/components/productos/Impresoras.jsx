@@ -59,14 +59,14 @@ const Impresoras = () => {
                   data-aos-duration="1000"
                   class="col-md-6 col-lg-3 text-center p-3 mb-5 pb-5"
                 >
-                  <Link to={`/detalle/${data.nombre}`}>
+                  <Link to={`/productos/impresoras/${data.nombre}`}>
                     <img
                       src={require("../../img/fotos_productos/" + data.img)}
                       alt=""
                       class="img-fluid"
                     />
                   </Link>
-                  <Link to={`/detalle/${data.nombre}`}>
+                  <Link to={`/productos/impresoras/${data.nombre}`}>
                     <h6 class="bAculC">
                       <span class="py-4 d-inline-block text-white">
                         {data.nombre}

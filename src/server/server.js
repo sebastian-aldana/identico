@@ -37,8 +37,6 @@ app.get("*", (req, res) => {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/app.css" type="text/css" />
-    <link rel="stylesheet" href="css/1.app.css" type="text/css" />
   </head>
   <body>
     <div id="app"></div>
@@ -162,7 +160,6 @@ app.get("*", (req, res) => {
     onClick="_gaq.push(['_trackEvent', 'boton', 'clic']);"
   ></script>
     <script src="assets/app.js"></script>
-    <script src="assets/vendor.js"></script>
   </body>
 </html>  
   `);
