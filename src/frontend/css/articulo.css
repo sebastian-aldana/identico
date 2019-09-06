@@ -9,4 +9,5 @@
 }
 .articulo-titulo > img {
   border-radius: 30px;
+  max-width: 100%;
 }

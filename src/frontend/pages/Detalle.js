@@ -7,13 +7,13 @@ import Layout from "../containers/Layout";
 class Detalle extends React.Component {
   render() {
     var id = this.props.match.params.id;
-    var id = id.replace(":", "");
     console.log(id);
 
     const productos = require("../json/productos.json");
 
     return (
       <Layout>
+        {/* <h1>{id}</h1> */}
         {productos.data.map(dato => {
           if (dato.nombre == id) {
             return (
@@ -23,7 +23,9 @@ class Detalle extends React.Component {
                   <div class="col-11 col-md-4 p-0 my-5 text-center align-self-center producto">
                     <div class="zoom" id="ex1">
                       <img
-                        src={require("../img/fotos_productos/" + dato.img)}
+                        src={
+                          "../" + require("../img/fotos_productos/" + dato.img)
+                        }
                         width="600"
                         height="600"
                         alt=""

@@ -21,13 +21,22 @@
 .publicaciones {
   display: flex;
   margin: 10px;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
 }
 .publicaciones > img {
-  width: 40%;
+  width: 50%;
   border-radius: 10px;
   margin-right: 5px;
 }
 .resumen > h2 {
   font-size: 15px;
   text-align: left;
+}
+
+@media (max-width: 1000px) {
+  .publicaciones {
+    flex-direction: column;
+  }
 }

@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import llamada from "../../img/llamada.png";
 import logo from "../../img/logo.png";
+import { HashLink } from "react-router-hash-link";
 
-import { Link } from "react-router-dom";
 import Search from "./Search";
 
 const Navbar = () => {
+  const [active, setActive] = useState(false);
+  const scroll = () => window.scrollTo(0, 300);
+  const top = () => window.scrollTo(0, 0);
+  const toggle = () => {
+    setActive(!active);
+  };
   return (
     <>
       <div
@@ -47,9 +53,15 @@ const Navbar = () => {
       </div>
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
-          <Link className="navbar-brand" to="/">
+          <HashLink
+            className="navbar-brand"
+            onClick={() => {
+              top(), toggle();
+            }}
+            to="/"
+          >
             <img src={logo} alt="IDéntico" style={{ maxWidth: "197px" }} />
-          </Link>
+          </HashLink>
 
           <button
             className="navbar-toggler"
@@ -65,38 +77,81 @@ const Navbar = () => {
             </span>
           </button>
 
-          <div className="collapse navbar-collapse" id="navbarResponsive">
+          <div
+            className={
+              active
+                ? " navbar-collapse collapsing  "
+                : " collapse navbar-collapse  "
+            }
+            id="navbarResponsive"
+          >
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <HashLink
+                  to="/"
+                  onClick={() => {
+                    top();
+                    toggle();
+                  }}
+                  className="nav-link"
+                >
                   Inicio
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <Link to="/nosotros" className="nav-link">
+                <HashLink
+                  to="/nosotros"
+                  onClick={() => {
+                    scroll(), toggle();
+                  }}
+                  className="nav-link"
+                >
                   Quiénes Somos
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <Link to="/productos" className="nav-link">
+                <HashLink
+                  to="/productos"
+                  onClick={() => {
+                    scroll(), toggle();
+                  }}
+                  className="nav-link"
+                >
                   Productos
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <Link to="/servicios" className="nav-link">
+                <HashLink
+                  to="/servicios"
+                  onClick={() => {
+                    scroll(), toggle();
+                  }}
+                  className="nav-link"
+                >
                   Servicios
-                </Link>
+                </HashLink>
               </li>
               <li className="nav-item">
-                <Link to="/blog" className="nav-link">
+                <HashLink
+                  to="/blog"
+                  onClick={() => {
+                    top(), toggle();
+                  }}
+                  className="nav-link"
+                >
                   Blog
-                </Link>
+                </HashLink>
               </li>
               {/* <!-- <li className="nav-item"><a href="" className="nav-link">Blog</a></li> --> */}
               <li className="nav-item">
-                <a href="#contactanos" className="nav-link scroll">
+                <HashLink
+                  smooth
+                  onClick={toggle}
+                  to="#contactanos"
+                  className="nav-link scroll"
+                >
                   Contacto
-                </a>
+                </HashLink>
               </li>
               <li className="nav-item d-flex d-lg-none">
                 <form className="form-row" action="resultados" method="post">
