@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: path.resolve(__dirname, "src/index.js")
   },
@@ -12,7 +12,7 @@ module.exports = {
     filename: "assets/app.js",
     // chunkFilename: "[name].js",
     // path: "/",
-    path: path.resolve(__dirname, "/"),
+    path: path.resolve(__dirname, "identico"),
     // chunkFilename: "js/[id].js",
     // chunkFilename: "js/[id].js",
     publicPath: "/"
@@ -113,7 +113,7 @@ module.exports = {
         use: {
           loader: "url-loader",
           options: {
-            limit: 10000,
+            limit: 10,
             fallback: "file-loader",
             name: "images/[name].[ext]"
           }
