@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-import Acceso from "../components/productos/Acceso";
-import Camaras from "../components/productos/Camaras";
 import Consumibles from "../components/productos/Consumibles";
 import Impresoras from "../components/productos/Impresoras";
 import Tarjetas from "../components/productos/Tarjetas";
@@ -92,54 +90,6 @@ const Productos = () => {
                   }}
                 >
                   <span>TARJETAS</span>
-                </a>
-              </li>
-              <li
-                class={
-                  active === 3
-                    ? "nav-item text-center active"
-                    : "nav-item text-center"
-                }
-              >
-                <a
-                  class={
-                    active === 3
-                      ? "nav-link total acti active centro"
-                      : "nav-link total centro"
-                  }
-                  onClick={e => {
-                    e.preventDefault();
-                    setActive(3);
-                    setComponente(<Acceso />);
-                  }}
-                >
-                  <span>
-                    CONTROL <br /> DE ACCESO
-                  </span>
-                </a>
-              </li>
-              <li
-                class={
-                  active === 4
-                    ? "nav-item text-center active"
-                    : "nav-item text-center"
-                }
-              >
-                <a
-                  class={
-                    active === 4
-                      ? "nav-link total acti active centro"
-                      : "nav-link total centro"
-                  }
-                  onClick={e => {
-                    e.preventDefault();
-                    setActive(4);
-                    setComponente(<Camaras />);
-                  }}
-                >
-                  <span>
-                    CAMARAS <br /> DE SEGURIDAD
-                  </span>
                 </a>
               </li>
             </ul>

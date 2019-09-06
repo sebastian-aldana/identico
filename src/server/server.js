@@ -40,6 +40,7 @@ app.get("*", (req, res) => {
   </head>
   <body>
     <div id="app"></div>
+    <script async src="assets/app.js"></script>
     <div
       class="btn-whatsapp"
       style="
@@ -86,7 +87,7 @@ app.get("*", (req, res) => {
                 type="text/javascript"
                 src="https://js.hsforms.net/forms/shell.js"
               ></script>
-              <script>
+              <script >
                 hbspt.forms.create({
                   portalId: "5239056",
                   formId: "33ec6d78-377e-4ef6-affe-44f79914547b"
@@ -151,7 +152,7 @@ app.get("*", (req, res) => {
         </div>
       </div>
     </footer>
-    <script
+    <script asyn
     type="text/javascript"
     id="hs-script-loader"
     async
@@ -159,7 +160,6 @@ app.get("*", (req, res) => {
     src="https://js.hs-scripts.com/5239056.js"
     onClick="_gaq.push(['_trackEvent', 'boton', 'clic']);"
   ></script>
-    <script src="assets/app.js"></script>
   </body>
 </html>  
   `);
