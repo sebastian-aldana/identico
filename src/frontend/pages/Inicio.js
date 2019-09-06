@@ -12,6 +12,7 @@ import home_2 from "../img/home-2.jpg";
 import logo_blanco from "../img/logo-blanco.png";
 import logo_zebra from "../img/logo-zebra.jpg";
 import logo_fargo from "../img/logo-fargo.jpg";
+import "../img/whatsapp.png";
 
 import MasVendidos from "../components/MasVendidos";
 import Layout from "../containers/Layout";
