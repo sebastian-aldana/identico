@@ -28,6 +28,9 @@ if (ENV === "development") {
   app.use(webpackDevMiddleware(compiler, serverConfig));
   app.use(webpackHotMiddleware(compiler));
 }
+
+app.use("/static", express.static("identico"));
+
 app.get("*", (req, res) => {
   res.send(`
   <!DOCTYPE html>
@@ -40,7 +43,7 @@ app.get("*", (req, res) => {
   </head>
   <body>
     <div id="app"></div>
-    <script async src="assets/app.js"></script>
+    <script async src="/static/assets/app.js"></script>
     <div
       class="btn-whatsapp"
       style="

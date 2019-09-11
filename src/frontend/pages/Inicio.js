@@ -1,7 +1,6 @@
 import React from "react";
 
 import Slider from "react-slick";
-import AOS from "aos";
 
 import { Link } from "react-router-dom";
 
@@ -16,6 +15,12 @@ import "../img/whatsapp.png";
 
 import MasVendidos from "../components/MasVendidos";
 import Layout from "../containers/Layout";
+
+import AOS from "aos";
+
+// if (typeof window !== "undefined") {
+//   import AOS from "aos";
+// }
 
 function Inicio(props) {
   AOS.init();
