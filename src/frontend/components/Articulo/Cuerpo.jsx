@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Uno from "../../post/uno.jpg";
+import Redes from "../Aside/Redes";
 import "../../css/articulo.css";
 
 const Titulo = props => {
@@ -21,6 +21,7 @@ const Titulo = props => {
                   __html: `${post.post}`
                 }}
               />
+              <Redes />
             </div>
           );
         }

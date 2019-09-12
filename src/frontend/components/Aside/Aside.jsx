@@ -7,7 +7,6 @@ import Search from "../Navbar/Search";
 const Aside = () => {
   return (
     <div className="aside">
-      <Redes />
       {/* <Search /> */}
       <Publicaciones />
     </div>
