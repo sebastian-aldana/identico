@@ -176,9 +176,7 @@ function Inicio(props) {
                   className="img-fluid"
                   style={{ width: "550px", backgroundPosition: "top" }}
                 />
-                <h1 className="text-white mt-4 mb-0">
-                  Expertos en Identificación Segura
-                </h1>
+                <h1 className="text-white mt-4 mb-0">Expertos</h1>
               </div>
             </div>
           </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo_zebra from "../../img/logo-zebra.jpg";
 import logo_fargo from "../../img/logo-fargo.jpg";
+import logo_data from "../../img/logo-datacard.jpg";
 
 import { Link } from "react-router-dom";
 
@@ -42,6 +43,18 @@ const Impresoras = () => {
               }}
             >
               <img src={logo_fargo} class="img-fluid" />
+            </a>
+          </span>
+          <span class="mx-2">
+            <a
+              href="http://identicomexico.com/impresoras-fargo#impresoras-fargo"
+              class="btn btn-link"
+              onClick={e => {
+                e.preventDefault();
+                setActive(3);
+              }}
+            >
+              <img src={logo_data} class="img-fluid" />
             </a>
           </span>
         </div>
