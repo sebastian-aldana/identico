@@ -38,15 +38,15 @@ class Detalle extends React.Component {
                         __html: `${dato.descripcion}`
                       }}
                     />
-                    <div class="mt-5 text-center">
+                    {/* <div class="mt-5 text-center">
                       <a
-                        href="<?php echo $url_absoluta; ?>fichas_pdf/<?php echo $row_DetalleProducto['ficha_pdf']; ?>"
+                        href="../pdf/SD_Series_Sell_Sheet-Spanish.pdf"
                         class="btn btn-primary"
                         target="_blank"
                       >
                         Descargar ficha técnica
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
