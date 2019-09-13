@@ -4,7 +4,7 @@ const webpack = require("webpack");
 const autoprefixer = require("autoprefixer");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     index: path.resolve(__dirname, "src/index.js")
   },
