@@ -1,14 +1,9 @@
-import React, { useState } from "react";
-import logo_zebra from "../../img/logo-zebra.jpg";
-import logo_fargo from "../../img/logo-fargo.jpg";
-import logo_data from "../../img/logo-datacard.jpg";
-
+import React from "react";
 import { Link } from "react-router-dom";
-
 import AOS from "aos";
+import LogosImpresoras from "./LogosImpresoras";
 
 const Impresoras = () => {
-  const [active, setActive] = useState(1);
   const data = require("../../json/productos.json");
   var numero = 0;
   AOS.init();
@@ -19,26 +14,7 @@ const Impresoras = () => {
       role="tabpanel"
       aria-labelledby="lealtad-tab"
     >
-      <div class="row justify-content-center">
-        <div class="col-11 text-center text-md-left">
-          <span class="mx-2">
-            <Link to="/productos/impresoras/zebra">
-              <img src={logo_zebra} class="img-fluid" />
-            </Link>
-          </span>
-          <span class="mx-2">
-            <Link to="/productos/impresoras/fargo">
-              <img src={logo_fargo} class="img-fluid" />
-            </Link>
-          </span>
-          <span class="mx-2">
-            <Link to="/productos/impresoras/datacard">
-              <img src={logo_data} class="img-fluid" />
-            </Link>
-          </span>
-        </div>
-      </div>
-
+      <LogosImpresoras />
       <div class="row productos" id="show_filtro_marca_impresoras">
         <div class="col-12">{`Productos ${data.data.length}`}</div>
         {data.data.map(data => {

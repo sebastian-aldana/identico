@@ -31,9 +31,7 @@ function App() {
         }}
       />
       <Route exact path="/productos/:category" component={Detalle} />
-      <Route exact path="/productos/:category/:brand" component={Detalle} />
-      <Route exact path="/productos/:category/:brand/:id" component={Detalle} />
-      <Route exact path="/servicios" component={Servicios} />
+      <Route exact path="/productos/:category/:id" component={Detalle} />
       <Route exact path="/servicios" component={Servicios} />
       {/* <Route exact path="/productos/consumibles/:id" component={Detalle} /> */}
       {/* <Route exact path="/productos/impresoras/:id" component={Detalle} /> */}

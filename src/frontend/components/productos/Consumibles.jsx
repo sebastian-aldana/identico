@@ -1,9 +1,6 @@
 import React from "react";
-
-import logo_zebra from "../../img/logo-zebra.jpg";
-import logo_datacard from "../../img/logo-datacard.jpg";
-
 import { Link } from "react-router-dom";
+import LogosConsumibles from "./LogosConsumibles";
 
 const Consumibles = () => {
   const data = require("../../json/productos.json");
@@ -18,21 +15,7 @@ const Consumibles = () => {
           role="tabpanel"
           aria-labelledby="identimovil-tab"
         >
-          <div class="row justify-content-center">
-            <div class="col-11 text-center text-md-left">
-              <span class="mx-2">
-                <Link to="/productos/consumibles/zebra">
-                  <img src={logo_zebra} class="img-fluid" />
-                </Link>
-              </span>
-              <span class="mx-2">
-                <Link to="/productos/consumible/datacard">
-                  <img src={logo_datacard} class="img-fluid" />
-                </Link>
-              </span>
-            </div>
-          </div>
-
+          <LogosConsumibles />
           <div class="row productos" id="show_filtro_marca_consumibles">
             <div class="col-12">Consumibles</div>
             {data.data.map(data => {
