@@ -3,7 +3,8 @@ import Productos from "./Productos";
 import Tarjetas from "../components/productos/Tarjetas";
 import LogosImpresoras from "../components/productos/LogosImpresoras";
 import LogosConsumibles from "../components/productos/LogosConsumibles";
-import ListProducts from "../components/productos/ListProducts";
+import ListProduct from "../components/productos/ListProduct";
+import ListCategory from "../components/productos/ListCategory";
 
 class Detalle extends React.Component {
   render() {
@@ -15,27 +16,36 @@ class Detalle extends React.Component {
           return (
             <Productos>
               <LogosImpresoras />
+              <p>1,1</p>
             </Productos>
           );
         } else if (params.id === "fargo") {
           return (
             <Productos>
               <LogosImpresoras />
+              <p>1,2</p>
             </Productos>
           );
         } else if (params.id === "datacard") {
           return (
             <Productos>
               <LogosImpresoras />
+              <p>1,3</p>
             </Productos>
           );
         } else {
-          return <ListProducts id={params.id} />;
+          return (
+            <>
+              <p>1</p>
+              <ListProduct id={params.id} />
+            </>
+          );
         }
       }
       return (
         <Productos>
           <LogosImpresoras />
+          <ListCategory id="1" />
         </Productos>
       );
     } else if (params.category === "consumibles") {
@@ -44,21 +54,29 @@ class Detalle extends React.Component {
           return (
             <Productos>
               <LogosConsumibles />
+              <p>2,1</p>
             </Productos>
           );
         } else if (params.id === "datacard") {
           return (
             <Productos>
               <LogosConsumibles />
+              <p>2,2</p>
             </Productos>
           );
         } else {
-          return <ListProducts id={params.id} />;
+          return (
+            <>
+              <p>2</p>
+              <ListProducts id={params.id} />;
+            </>
+          );
         }
       }
       return (
         <Productos>
           <LogosConsumibles />
+          <ListCategory id="2" />
         </Productos>
       );
     } else if (params.category === "tarjetas") {
