@@ -52,6 +52,8 @@ class Detalle extends React.Component {
               <LogosConsumibles />
             </Productos>
           );
+        } else {
+          return <ListProducts id={params.id} />;
         }
       }
       return (
