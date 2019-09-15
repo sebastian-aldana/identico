@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import loadable from "@loadable/component";
 
 const Inicio = loadable(() => import("./frontend/pages/Inicio"));
+const Cotizador = loadable(() => import("./frontend/pages/Cotizador"));
 const Nosotros = loadable(() => import("./frontend/pages/Nosotros"));
 const Productos = loadable(() => import("./frontend/pages/Productos"));
 const Servicios = loadable(() => import("./frontend/pages/Servicios"));
@@ -18,6 +19,7 @@ function App() {
   return (
     <Switch>
       <Route exact path="/" component={Inicio} />
+      <Route exact path="/cotizador" component={Cotizador} />
       <Route exact path="/nosotros" component={Nosotros} />
       <Route
         exact
