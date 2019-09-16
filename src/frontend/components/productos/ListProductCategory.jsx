@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import AOS from "aos";
 
 class ListProductCategory extends React.Component {
   render() {
+    AOS.init();
     const productos = require("../../json/productos.json");
 
     return (

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LogosConsumibles from "./LogosConsumibles";
+import AOS from "aos";
 
 const Consumibles = () => {
   const data = require("../../json/productos.json");
