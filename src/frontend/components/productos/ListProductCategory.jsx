@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-class ListCategory extends React.Component {
+class ListProductCategory extends React.Component {
   render() {
     const productos = require("../../json/productos.json");
 
     return (
       <div className="row productos">
         {productos.data.map(dato => {
-          if (dato.id_tipo == this.props.id) {
+          if (
+            dato.id_tipo == this.props.id &&
+            dato.id_marca == this.props.marca
+          ) {
             return (
               <div
                 data-aos="fade-up"
@@ -38,4 +41,4 @@ class ListCategory extends React.Component {
   }
 }
 
-export default ListCategory;
+export default ListProductCategory;
