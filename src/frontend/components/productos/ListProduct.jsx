@@ -3,7 +3,7 @@ import home_2 from "../../img/home-2.jpg";
 import logo_blanco from "../../img/logo-blanco.png";
 import Layout from "../../containers/Layout";
 
-class ListProducts extends React.Component {
+class ListProduct extends React.Component {
   render() {
     const productos = require("../../json/productos.json");
     return (
@@ -81,4 +81,4 @@ class ListProducts extends React.Component {
   }
 }
 
-export default ListProducts;
+export default ListProduct;
