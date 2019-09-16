@@ -152,7 +152,7 @@ const Navbar = () => {
                   Contacto
                 </HashLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <HashLink
                   smooth
                   onClick={toggle}
@@ -161,7 +161,7 @@ const Navbar = () => {
                 >
                   Cotizador
                 </HashLink>
-              </li>
+              </li> */}
               <li className="nav-item d-flex d-lg-none">
                 <form className="form-row" action="resultados" method="post">
                   <div className="col-auto">
