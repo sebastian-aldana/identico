@@ -15,7 +15,7 @@ function Nosotros() {
   AOS.init();
   return (
     <Layout>
-      <div class="row justify-content-center">
+      <div class=" container justify-content-center">
         <div class="col-11 cAzulM py-3 mt-5 text-justify">
           <p>
             <span class="cAculC max">IDÉNTICO MÉXICO S.A. DE C.V.</span> fue
