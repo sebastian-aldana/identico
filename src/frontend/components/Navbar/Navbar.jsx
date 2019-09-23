@@ -142,7 +142,6 @@ const Navbar = () => {
                   Blog
                 </HashLink>
               </li>
-              {/* <!-- <li className="nav-item"><a href="" className="nav-link">Blog</a></li> --> */}
               <li className="nav-item">
                 <HashLink
                   smooth
@@ -151,6 +150,16 @@ const Navbar = () => {
                   className="nav-link scroll"
                 >
                   Contacto
+                </HashLink>
+              </li>
+              <li className="nav-item">
+                <HashLink
+                  smooth
+                  onClick={toggle}
+                  to="/cotizador"
+                  className="nav-link scroll"
+                >
+                  Cotizador
                 </HashLink>
               </li>
               <li className="nav-item d-flex d-lg-none">
