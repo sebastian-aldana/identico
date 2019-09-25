@@ -200,9 +200,8 @@ const Navbar = props => {
           className="btn-llamanos"
           data-toggle="modal"
           data-target="#exampleModal"
-          style={{ position: "fixed", zIndex: 10000, top: "20%", left: "0" }}
         >
-          <img src={llamada} alt="Te llamamos" style={{ width: "90px" }} />
+          <img src={llamada} alt="Te llamamos" className="img-btn-contacto" />
         </a>
 
         <div

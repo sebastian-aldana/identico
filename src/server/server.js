@@ -44,18 +44,7 @@ app.get("*", (req, res) => {
     <script async src="assets/app.js"></script>
     <div
       class="btn-whatsapp"
-      style="
-    display:block;
-    width:70px;
-    height:70px;
-    color#fff;
-    position: fixed;
-    left:0px;
-    top:250px;
-    border-radius:50%;
-    line-height:80px;
-    text-align:center;
-    z-index:999;"
+      
     >
       <a
         href="https://api.whatsapp.com/send?phone=5215579501027"
@@ -63,11 +52,30 @@ app.get("*", (req, res) => {
         rel="noreferrer"
       >
         <img
+          class="img-btn-contacto"
           src="/images/whatsapp.png"
           alt=""
-          style="width: 90px;"
+          
         />
       </a>
+    </div>
+    <div
+      class="btn-skype"
+      
+    >
+      <a
+        href="skype:live:info_824599?chat"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <img
+        class="img-btn-contacto"
+          src="/images/skype.png"
+          alt=""
+          
+        />
+      </a>
+      <div class="barra-blanca-bot"></div>
     </div>
     <footer class="pt-5" id="contactanos">
       <div class="container-fluid">
