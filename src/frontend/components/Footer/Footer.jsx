@@ -10,7 +10,7 @@ import HubspotForm from "react-hubspot-form";
 const Footer = () => {
   return (
     <>
-      <div className="row my-5">
+      <div className="my-5">
         <div
           className="col-12 my-4 p-0 parallax fondoimg"
           style={{ backgroundImage: `url(${pago_tarjeta})` }}

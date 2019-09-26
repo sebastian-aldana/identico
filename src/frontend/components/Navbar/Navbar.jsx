@@ -5,12 +5,19 @@ import { HashLink } from "react-router-hash-link";
 
 import Search from "./Search";
 
-const Navbar = () => {
+const Navbar = props => {
   const [active, setActive] = useState(false);
   const scroll = () => window.scrollTo(0, 300);
   const top = () => window.scrollTo(0, 0);
   const toggle = () => {
-    setActive(!active);
+    var w = Math.max(
+      document.documentElement.clientWidth,
+      window.innerWidth || 0
+    );
+    if (w < 1000) {
+      console.log(w);
+      setActive(!active);
+    }
   };
   return (
     <>
@@ -92,6 +99,7 @@ const Navbar = () => {
                   onClick={() => {
                     top();
                     toggle();
+                    console.log(props);
                   }}
                   className="nav-link"
                 >
@@ -192,9 +200,8 @@ const Navbar = () => {
           className="btn-llamanos"
           data-toggle="modal"
           data-target="#exampleModal"
-          style={{ position: "fixed", zIndex: 10000, top: "20%", left: "0" }}
         >
-          <img src={llamada} alt="Te llamamos" style={{ width: "90px" }} />
+          <img src={llamada} alt="Te llamamos" className="img-btn-contacto" />
         </a>
 
         <div
