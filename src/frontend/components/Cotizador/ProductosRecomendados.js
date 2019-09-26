@@ -7,7 +7,7 @@ const ProductosRecomendados = ({ recomendado }) => {
       <div className="align-items-stretch">
         <img
           src={require("../../img/fotos_productos/" + recomendado.img)}
-          class="card-img-top"
+          class="card-img-top" 
           alt="..."
         ></img>
       </div>

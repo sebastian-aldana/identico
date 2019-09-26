@@ -15,7 +15,10 @@ const Redes = () => {
         >
           <img src={facebook} alt="imagen" /> Facebook
         </a>
-        <a target="_blank" href={`http://twitter.com/home?status=${URLactual}`}>
+        <a
+          target="_blank"
+          href={`http://twitter.com/intent/tweet?text=${URLactual}`}
+        >
           <img src={twitter} alt="imagen" /> Twitter
         </a>
 
