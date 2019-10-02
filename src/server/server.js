@@ -176,5 +176,5 @@ app.get("*", (req, res) => {
 
 app.listen(PORT, err => {
   if (err) console.log(err);
-  console.log(`Server runnning on${PORT}`);
+  console.log(`Server runnning on ${PORT}`);
 });
