@@ -30,7 +30,7 @@ const Impresoras = () => {
                     src={require("../../img/fotos_productos/" + data.img)}
                     alt=""
                     class="img-fluid"
-                    style={{ minHeight: "280px", width: "auto" }}
+                    style={{ height: "290px", width: "auto" }}
                   />
                 </Link>
                 <Link to={`/productos/impresoras/${data.nombre}`}>
