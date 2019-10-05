@@ -29,6 +29,7 @@ const Consumibles = () => {
                     <img
                       src={require("../../img/fotos_productos/" + data.img)}
                       class="img-fluid"
+                      style={{ minHeight: "280px", width: "auto" }}
                     />
                   </Link>
                   <Link to={`/productos/consumibles/${data.nombre}`}>
