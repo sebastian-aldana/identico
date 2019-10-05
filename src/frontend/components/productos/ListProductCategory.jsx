@@ -25,7 +25,7 @@ class ListProductCategory extends React.Component {
                     src={require("../../img/fotos_productos/" + dato.img)}
                     alt=""
                     class="img-fluid"
-                    style={{ minHeight: "280px", width: "auto" }}
+                    style={{ height: "290px", width: "auto" }}
                   />
                 </Link>
                 <Link to={`/productos/${this.props.category}/${dato.nombre}`}>
