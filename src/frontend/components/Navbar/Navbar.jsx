@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import HubspotForm from "react-hubspot-form";
 import llamada from "../../img/llamada.png";
 import logo from "../../img/logo.png";
 import { HashLink } from "react-router-hash-link";
@@ -223,60 +224,13 @@ const Navbar = props => {
                 >
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <form
-                  className="px-5 py-5 py-md-4"
-                  method="post"
-                  action="procesa.php"
-                >
-                  <div className="form-group mt-4 mt-md-0">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="id_nombre_dos"
-                      name="nombre"
-                      placeholder="Nombre"
-                    />
-                    <div className="invalid-feedback" />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="id_email_dos"
-                      name="email"
-                      placeholder="Email"
-                    />
-                    <div className="invalid-feedback" />
-                  </div>
-                  <div className="form-group">
-                    <textarea
-                      className="form-control"
-                      rows="5"
-                      id="id_msj_dos"
-                      name="msj"
-                      placeholder="Mensaje"
-                    />
-                    <div className="invalid-feedback" />
-                  </div>
-                  <div className="form-row">
-                    <div className="form-group col-12">
-                      <div
-                        className="g-recaptcha"
-                        data-sitekey="6LcVhnkUAAAAAHSk1tt1yOGPPE6y6OtE85kvxAni"
-                      />
-                    </div>
-                    <div className="form-group col-12 text-center text-md-right">
-                      <button
-                        type="submit"
-                        id="id_enviar_dos"
-                        className="btn btn-primary badge-pill px-4"
-                      >
-                        ENVIAR
-                      </button>
-                    </div>
-                  </div>
-                  <input type="hidden" name="InsertContact" />
-                </form>
+                <HubspotForm
+                  portalId="5239056"
+                  formId="33ec6d78-377e-4ef6-affe-44f79914547b"
+                  onSubmit={() => console.log("Submit!")}
+                  onReady={form => console.log("Form ready!")}
+                  loading={<div>Loading...</div>}
+                />
               </div>
             </div>
           </div>
