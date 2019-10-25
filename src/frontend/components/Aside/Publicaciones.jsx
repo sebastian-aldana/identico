@@ -10,7 +10,7 @@ const Publicaciones = () => {
         return (
           <div className="publicaciones">
             <img src={require("../../post/" + dato.img)} alt="" />
-            <Link to={`/articulo:${dato.url}`}>
+            <Link to={`/articulo/${dato.url}`}>
               <div className="resumen">
                 <h2>{dato.title}</h2>
               </div>
