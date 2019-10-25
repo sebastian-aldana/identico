@@ -6,11 +6,12 @@
       "img": "zebra_zxp9_1.jpg",
       "descripcion": "Diseñada para satisfacer la necesidad de aplicar la mas alta seguridad, la ZXP Series 9 le permite obtener tarjetas con ... \r\n"
     },
+
     {
-      "id": "2",
-      "nombre": "Zebra-ZXP3",
-      "img": "zebra_zxp3_4.jpg",
-      "descripcion": "Producto Descontinuado\r\n"
+      "id": "6",
+      "nombre": "Zebra-ZC300",
+      "img": "zebra_zc300.jpg",
+      "descripcion": "Simplificación de las impresiones de tarjetas complejas..."
     },
     {
       "id": "3",
