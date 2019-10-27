@@ -10,6 +10,7 @@ const Servicios = loadable(() => import("./frontend/pages/Servicios"));
 const Detalle = loadable(() => import("./frontend/pages/Detalle"));
 const Blog = loadable(() => import("./frontend/pages/Blog"));
 const Articulo = loadable(() => import("./frontend/pages/Articulo"));
+const Identisecure = loadable(() => import("./frontend/pages/IdSecure"));
 const Not = loadable(() => import("./frontend/pages/NotFound"));
 const Impresoras = loadable(() =>
   import("./frontend/components/productos/Impresoras")
@@ -21,6 +22,7 @@ function App() {
       <Route exact path="/" component={Inicio} />
       <Route exact path="/cotizador" component={Cotizador} />
       <Route exact path="/nosotros" component={Nosotros} />
+      <Route exact path="/identisecure" component={Identisecure} />
       <Route
         exact
         path="/productos"
