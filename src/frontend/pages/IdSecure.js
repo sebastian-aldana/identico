@@ -39,7 +39,7 @@ const IdSecure = () => {
                   className="cAculC"
                 >
                   IDentisecure, nace como una respuesta a nuestros clientes para
-                  complementar sus esquemas de seguridad físico, con esquemas de
+                  complementar sus esquemas de seguridad física, con esquemas de
                   seguridad informática.
                 </h3>
 
