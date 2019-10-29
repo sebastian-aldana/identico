@@ -22,7 +22,7 @@ function App() {
       <Route exact path="/" component={Inicio} />
       <Route exact path="/cotizador" component={Cotizador} />
       <Route exact path="/nosotros" component={Nosotros} />
-      <Route exact path="/identisecure" component={Identisecure} />
+      <Route exact path="/productos/identisecure" component={Identisecure} />
       <Route
         exact
         path="/productos"

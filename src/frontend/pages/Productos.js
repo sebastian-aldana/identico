@@ -35,6 +35,16 @@ const Productos = props => {
                   <span>TARJETAS</span>
                 </Link>
               </li>
+              <li class="nav-item text-center">
+                <Link
+                  to="/productos/identisecure"
+                  class="nav-link total centro"
+                >
+                  <span>
+                    SEGURIDAD <br /> INFORMATICA
+                  </span>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
