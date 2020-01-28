@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import HubspotForm from "react-hubspot-form";
 import llamada from "../../img/llamada.png";
 import logo from "../../img/logo.png";
+
+import Formulario from "../cliengo/Formulario";
 import { HashLink } from "react-router-hash-link";
 
 import Search from "./Search";
@@ -224,13 +225,7 @@ const Navbar = props => {
                 >
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <HubspotForm
-                  portalId="5239056"
-                  formId="33ec6d78-377e-4ef6-affe-44f79914547b"
-                  onSubmit={() => console.log("Submit!")}
-                  onReady={form => console.log("Form ready!")}
-                  loading={<div>Loading...</div>}
-                />
+                <Formulario />
               </div>
             </div>
           </div>
