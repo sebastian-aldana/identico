@@ -4,7 +4,7 @@ import webpack from "webpack";
 
 dotenv.config();
 
-const ENV = process.env.NODE_ENV;
+const ENV = process.env.NODE_ENV || "production";
 const PORT = process.env.PORT || 3000;
 
 const app = express();
