@@ -1,4 +1,5 @@
 import React from "react";
+import "../../css/slider.css";
 
 import banner_1 from "../../img/slider/banner-1.jpg";
 import banner_2 from "../../img/slider/banner-2.jpg";

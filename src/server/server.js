@@ -79,39 +79,7 @@ app.get("*", (req, res) => {
     </div>
     <footer class="pt-5" id="contactanos">
       <div class="container-fluid">
-        <div class="row posr">
-          <img
-            src="/images/btn-contacto.png"
-            alt="Cotáctanos"
-            style="width: 278px; height: 57px;"
-            class="pestania"
-          />
-          <div
-            class="col-md-8 p-0 align-self-center"
-            style="margin-top: 50px;   max-width: 1fr;"
-          >
-            <div style="padding-left: 120px; ">
-              <script
-                charset="utf-8"
-                type="text/javascript"
-                src="https://js.hsforms.net/forms/shell.js"
-              ></script>
-              <script >
-                hbspt.forms.create({
-                  portalId: "5239056",
-                  formId: "33ec6d78-377e-4ef6-affe-44f79914547b"
-                });
-              </script>
-            </div>
-          </div>
-
-          <div class="col-md-4 p-0 align-self-center text-center">
-            <img
-              src="/images/imagen-footer.png"
-              alt=""
-              class="img-fluid"
-            />
-          </div>
+        
 
           <div class="col-12 p-0">
             <div class="bdAzulO text-center text-white py-4">
@@ -161,14 +129,7 @@ app.get("*", (req, res) => {
         </div>
       </div>
     </footer>
-    <script asyn
-    type="text/javascript"
-    id="hs-script-loader"
-    async
-    defer
-    src="https://js.hs-scripts.com/5239056.js"
-    onClick="_gaq.push(['_trackEvent', 'boton', 'clic']);"
-  ></script>
+<!-- Código de instalación Cliengo para www.identicomexico.com --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/5e2f17ebe4b02e8af10aff4d/5e2f17ece4b02e8af10aff51.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
   </body>
 </html>  
   `);

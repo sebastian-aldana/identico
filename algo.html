@@ -1,0 +1,40 @@
+<!-- This is your Website Form -->
+<form action="" onsubmit="return mySubmitFunction()">
+  <input type="text" name="fullName" id="fullName" value="John Doe" />
+  <input type="text" name="email" id="email" value="email@company.com" />
+  <input type="text" name="phone" id="phone" value="+1 555-5555" />
+  <textarea type="text" name="message" id="message">
+    Lorem impsum...
+  </textarea>
+  <input type="submit" value="Send Information" />
+</form>
+
+<!-- This is your Script for saving Contacts -->
+<script>
+  function mySubmitFunction() {
+    Leadaki.saveContact({
+      full_name: document.getElementById("fullName").value,
+      phone: document.getElementById("phone").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+      success: function() {
+        alert("Contact was successfully saved!");
+      },
+      error: function() {
+        alert("There was a problem. Try again later.");
+      }
+    });
+    return false;
+  }
+</script>
+<script type="text/javascript">
+  (function() {
+    var ldk = document.createElement("script");
+    ldk.type = "text/javascript";
+    ldk.async = true;
+    ldk.src =
+      "https://s.cliengo.com/weboptimizer/5e2f17ebe4b02e8af10aff4d/5e2f17ece4b02e8af10aff51.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(ldk, s);
+  })();
+</script>
