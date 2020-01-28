@@ -29,6 +29,8 @@ if (ENV === "development") {
   app.use(webpackHotMiddleware(compiler));
 }
 
+app.use(express.static('identico'))
+
 app.get("*", (req, res) => {
   res.send(`
   <!DOCTYPE html>
