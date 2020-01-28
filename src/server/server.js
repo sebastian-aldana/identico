@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import webpack from "webpack";
 
 dotenv.config();
+production = "development";
 
 const ENV = process.env.NODE_ENV || production;
 const PORT = process.env.PORT || 3000;
