@@ -5,8 +5,6 @@ import whatsapp from "../../img/whatsapp.png";
 import contacto from "../../img/btn-contacto.png";
 import img_footer from "../../img/imagen-footer.png";
 
-import HubspotForm from "react-hubspot-form";
-
 const Footer = () => {
   return (
     <>

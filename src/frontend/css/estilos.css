@@ -545,12 +545,12 @@ img.pestania {
 }
 .btn-skype {
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
   color: #fff;
   position: fixed;
-  left: 5px;
-  top: 350px;
+  right: 135px;
+  bottom: 60px;
   border-radius: 50%;
   line-height: 80px;
   text-align: center;
@@ -558,12 +558,12 @@ img.pestania {
 }
 .btn-whatsapp {
   display: block;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   color: #fff;
   position: fixed;
-  left: 0px;
-  top: 250px;
+  right: 200px;
+  bottom: 51px;
   border-radius: 50%;
   line-height: 80px;
   text-align: center;
@@ -572,12 +572,13 @@ img.pestania {
 .btn-llamanos {
   position: fixed;
   z-index: 10000;
-  top: 150px;
-  left: 0;
+  bottom: 16px;
+  right: 250px;
 }
 .img-btn-contacto {
-  width: 90px;
+  width: 65px;
 }
+
 /* ---------------------------------------------------- Movil ---------------------------------------------------- */
 
 /* Dispositivo xl */
@@ -611,23 +612,6 @@ img.pestania {
 
 /* Dispositivo md */
 @media screen and (max-width: 770px) {
-  .img-btn-contacto {
-    width: 60px;
-  }
-  .btn-skype {
-    top: auto;
-    bottom: 40px !important;
-  }
-  .btn-whatsapp {
-    top: auto;
-    bottom: 15px !important;
-    left: 100px;
-  }
-  .btn-llamanos {
-    top: auto;
-    bottom: 14px !important;
-    left: 200px;
-  }
   .barra-blanca.bot {
     position: fixed;
     bottom: 100;
