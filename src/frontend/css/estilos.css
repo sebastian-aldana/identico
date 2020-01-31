@@ -549,8 +549,8 @@ img.pestania {
   height: 30px;
   color: #fff;
   position: fixed;
-  right: 135px;
-  bottom: 60px;
+  right: 185px;
+  bottom: 50px;
   border-radius: 50%;
   line-height: 80px;
   text-align: center;
@@ -562,8 +562,8 @@ img.pestania {
   height: 40px;
   color: #fff;
   position: fixed;
-  right: 200px;
-  bottom: 51px;
+  right: 250px;
+  bottom: 41px;
   border-radius: 50%;
   line-height: 80px;
   text-align: center;
@@ -573,8 +573,8 @@ img.pestania {
   display: none;
   position: fixed;
   z-index: 10000;
-  bottom: 16px;
-  right: 250px;
+  bottom: 6px;
+  right: 300px;
 }
 .img-btn-contacto {
   width: 65px;

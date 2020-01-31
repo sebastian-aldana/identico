@@ -46,6 +46,7 @@ app.get("*", (req, res) => {
   </head>
   <body>
     <div id="app"></div>
+<<<<<<< HEAD
     <script async src="/static/assets/app.js"></script>
     <div
       class="btn-whatsapp"
@@ -135,7 +136,14 @@ app.get("*", (req, res) => {
       </div>
     </footer>
 <!-- Código de instalación Cliengo para www.identicomexico.com --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/5e2f17ebe4b02e8af10aff4d/5e2f17ece4b02e8af10aff51.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+=======
+    <script async src="assets/app.js"></script>
+   
+>>>>>>> c01e3f87be3b6e1d5634c89e9697053a4a30f23b
   </body>
+  <!-- Start of  Zendesk Widget script -->
+<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=9825f111-4e56-4d71-95b6-308978b81479"> </script>
+<!-- End of  Zendesk Widget script -->
 </html>  
   `);
 });
