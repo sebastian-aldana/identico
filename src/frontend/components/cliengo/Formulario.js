@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 
 const Formulario = () => {
-  //Código de instalación Cliengo para www.identicomexico.com
-
   const [cliente, guardarCliente] = useState({
     name: "",
     phone: "",
@@ -13,15 +11,10 @@ const Formulario = () => {
     status: ""
   });
 
-  const API_KEY = "c4dd79a3-5d9e-4d97-9c44-71357a90f58d";
-  const URL = `https://api.cliengo.com/1.0/contacts?api_key=c4dd79a3-5d9e-4d97-9c44-71357a90f58d`;
-
   const actualizarState = e => {
-    // Almacenar lo que el usuario escribe en el State
     guardarCliente({
-      // obtener copia del estate
       ...cliente,
-      //agregar nuevos valores
+
       [e.target.name]: e.target.value,
       websiteId: "5e2f17ece4b02e8af10aff51",
       status: "new"
@@ -38,52 +31,60 @@ const Formulario = () => {
         cliente
       )
       .then(function(response) {
-        console.log("response creando contact: ", response);
+        console.log("response creando contacto: ", response);
       })
       .catch(function(error) {
-        console.log("error no se pudo crear contact: ", error);
+        console.log("error no se pudo crear contacto: ", error);
       });
   };
-  const mySubmitFunction = () => {
-    Leadaki.saveContact({
-      full_name: document.getElementById("fullName").value,
-      phone: document.getElementById("phone").value,
-      email: document.getElementById("email").value,
-      message: document.getElementById("message").value
-    });
-  };
+
   return (
     <form onSubmit={enviarCliente}>
+      <div className="form-group">
+        <label htmlFor="name">Nombre completo</label>
+        <input
+          className="form-control"
+          type="text"
+          name="name"
+          id="name"
+          onChange={actualizarState}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">Correo</label>
+        <input
+          className="form-control"
+          type="text"
+          name="email"
+          id="email"
+          onChange={actualizarState}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="phone">Telefono</label>
+        <input
+          className="form-control"
+          type="text"
+          name="phone"
+          id="phone"
+          onChange={actualizarState}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="message">Mensaje</label>
+        <textarea
+          className="form-control"
+          type="text"
+          name="message"
+          id="message"
+          onChange={actualizarState}
+        ></textarea>
+      </div>
       <input
-        type="text"
-        name="name"
-        id="name"
-        defaultValue="John Doe"
-        onChange={actualizarState}
+        type="submit"
+        className="btn btn-primary mb-2"
+        value="Enviar mensaje"
       />
-      <input
-        type="text"
-        name="email"
-        id="email"
-        defaultValue="email@company.com"
-        onChange={actualizarState}
-      />
-      <input
-        type="text"
-        name="phone"
-        id="phone"
-        defaultValue="+1 555-5555"
-        onChange={actualizarState}
-      />
-      <textarea
-        type="text"
-        name="message"
-        id="message"
-        onChange={actualizarState}
-      >
-        Lorem impsum...
-      </textarea>
-      <input type="submit" value="Send Information" />
     </form>
   );
 };

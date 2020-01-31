@@ -5,7 +5,7 @@ import webpack from "webpack";
 dotenv.config();
 production = "development";
 
-const ENV = process.env.NODE_ENV || production;
+const ENV = process.env.NODE_ENV || development;
 const PORT = process.env.PORT || 3000;
 
 const app = express();
@@ -30,7 +30,7 @@ if (ENV === "development") {
   app.use(webpackHotMiddleware(compiler));
 }
 
-app.use("/static", express.static("identico"));
+app.use(express.static("identico"));
 
 app.get("*", (req, res) => {
   res.send(`
