@@ -2,6 +2,8 @@ import express from "express";
 import dotenv from "dotenv";
 import webpack from "webpack";
 
+const correo = require("./node/correo");
+
 dotenv.config();
 
 const ENV = process.env.NODE_ENV || "development";
@@ -29,7 +31,13 @@ if (ENV === "development") {
   app.use(webpackHotMiddleware(compiler));
 }
 
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 app.use(express.static("identico"));
+
+//Enviar correos
+app.post("/enviar-correo", correo.enviarCorreo);
 
 app.get("*", (req, res) => {
   res.send(`

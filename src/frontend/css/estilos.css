@@ -549,7 +549,7 @@ img.pestania {
   height: 30px;
   color: #fff;
   position: fixed;
-  right: 115px;
+  right: 185px;
   bottom: 50px;
   border-radius: 50%;
   line-height: 80px;
@@ -562,7 +562,7 @@ img.pestania {
   height: 40px;
   color: #fff;
   position: fixed;
-  right: 185px;
+  right: 250px;
   bottom: 41px;
   border-radius: 50%;
   line-height: 80px;
@@ -570,7 +570,6 @@ img.pestania {
   z-index: 999;
 }
 .btn-llamanos {
-  display: none;
   position: fixed;
   z-index: 10000;
   bottom: 6px;
@@ -619,6 +618,18 @@ img.pestania {
     height: 100px;
     width: 100vw;
     background: whitesmoke;
+  }
+  .btn-skype {
+    right: 115px;
+    bottom: 50px;
+  }
+  .btn-whatsapp {
+    right: 185px;
+    bottom: 41px;
+  }
+  .btn-llamanos {
+    bottom: 6px;
+    right: 240px;
   }
   .row.tabss ul li.nav-item {
     width: 240px;
