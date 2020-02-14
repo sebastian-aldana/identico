@@ -57,8 +57,8 @@ app.get("*", (req, res) => {
    
   </body>
   <!-- Start of  Zendesk Widget script -->
-<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=9825f111-4e56-4d71-95b6-308978b81479"> </script>
-<!-- End of  Zendesk Widget script -->
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=1055a334-fb19-4175-949d-e668130bcd5b"> </script>
+  <!-- End of  Zendesk Widget script -->
 </html>  
   `);
 });
