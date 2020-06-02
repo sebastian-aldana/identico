@@ -53,9 +53,9 @@ app.get("*", (req, res) => {
   </head>
   <body>
     <div id="app"></div>
-    <script async src="assets/app.js"></script>
    
   </body>
+  <script async src="https://identicomexico.com/assets/app.js"></script>
   <!-- Start of  Zendesk Widget script -->
   <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=1055a334-fb19-4175-949d-e668130bcd5b"> </script>
   <!-- End of  Zendesk Widget script -->

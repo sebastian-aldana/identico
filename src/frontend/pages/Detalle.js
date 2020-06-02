@@ -10,7 +10,6 @@ import ListProductCategory from "../components/productos/ListProductCategory";
 class Detalle extends React.Component {
   render() {
     const params = this.props.match.params;
-    console.log(this.props);
     if (params.category === "impresoras") {
       if (params.id !== undefined) {
         if (params.id === "zebra") {

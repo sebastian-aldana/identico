@@ -22,8 +22,7 @@ const Formulario = () => {
     e.preventDefault();
     axios
       .post("/enviar-correo", cliente)
-      .then(function(response) {
-        console.log("response creando contacto: ", response);
+      .then(function (response) {
         if (response.status === 200) {
           Swal.fire({
             icon: "success",
@@ -36,8 +35,7 @@ const Formulario = () => {
           });
         }
       })
-      .catch(function(error) {
-        console.log("error no se pudo crear contacto: ", error);
+      .catch(function (error) {
       });
   };
 

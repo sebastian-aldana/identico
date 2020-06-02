@@ -17,7 +17,6 @@ const Navbar = props => {
       window.innerWidth || 0
     );
     if (w < 1000) {
-      console.log(w);
       setActive(!active);
     }
   };
@@ -101,7 +100,6 @@ const Navbar = props => {
                   onClick={() => {
                     top();
                     toggle();
-                    console.log(props);
                   }}
                   className="nav-link"
                 >
