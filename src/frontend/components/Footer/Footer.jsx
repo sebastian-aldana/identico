@@ -112,7 +112,10 @@ const Footer = () => {
                   </a>
                 </p>
                 <p>
-                  <a className="text-white" href="aviso-de-privacidad.php">
+                  <a
+                    className="text-white"
+                    href="https://identicomexico.com/avisoprivacidad"
+                  >
                     Aviso de Privacidad
                   </a>
                 </p>
