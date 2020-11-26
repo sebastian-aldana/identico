@@ -87,13 +87,14 @@ const Footer = () => {
                 </p>
                 <p>
                   <a
-                    href="https://www.google.com/maps/place/Av+Sonora+119,+Roma+Nte.,+06700+Ciudad+de+M%C3%A9xico,+CDMX/@19.4166312,-99.1706431,3a,75y,243.4h,86.19t/data=!3m7!1e1!3m5!1sjgzQBWGsrxaej2jwWAvvLg!2e0!6s%2F%2Fgeo0.ggpht.com%2Fcbk%3Fpanoid%3DjgzQBWGsrxaej2jwWAvvLg%26output%3Dthumbnail%26cb_client%3Dsearch.TACTILE.gps%26thumb%3D2%26w%3D86%26h%3D86%26yaw%3D238.53912%26pitch%3D0%26thumbfov%3D100!7i13312!8i6656!4m8!1m2!2m1!1sAv.+Sonora+119,+PB,+Col.+Roma+Norete,+Del.+Cuauhtemoc,+06700!3m4!1s0x85d1ff46feec46d1:0xc942c36094cbafab!8m2!3d19.4165364!4d-99.1708065"
+                    href="#"
                     className="text-white"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Av. Ejercito Nacional 505, Despacho 401, Col. Granada, CDMX,
-                    11520
+                    Av. Insurgentes Sur No. 1863, Puso 3, Int. 301, Col.
+                   
+                    Guadalupe Inn, CP 01020
                   </a>
                   <br />
                   <a className="text-white" href="tel:+525587894997">
@@ -112,7 +113,10 @@ const Footer = () => {
                   </a>
                 </p>
                 <p>
-                  <a className="text-white" href="aviso-de-privacidad.php">
+                  <a
+                    className="text-white"
+                    href="https://identicomexico.com/avisoprivacidad"
+                  >
                     Aviso de Privacidad
                   </a>
                 </p>

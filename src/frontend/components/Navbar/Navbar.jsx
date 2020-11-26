@@ -28,13 +28,14 @@ const Navbar = props => {
       >
         <i className="fas fa-map-marker-alt" />
         <a
-          href="https://www.google.com/maps/place/Oficina+401,+Av+Ej%C3%A9rcito+Nacional+505,+Granada,+11520+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.4381931,-99.190458,3a,75y,93.79h,90t/data=!3m8!1e1!3m6!1sbutW4vY7cksBfLI-bPF1SA!2e0!3e11!6s%2F%2Fgeo3.ggpht.com%2Fmaps%2Fphotothumb%2Ffd%2Fv1%3Fbpb%3DChAKDnNlYXJjaC5UQUNUSUxFElIKRAm5tq5oBwLShRGa6RAjil7OVhowCxDThbhCGicaJQoWChQKEgm5tq5oBwLShRERh7Ms_m3hpBILT2ZpY2luYSA0MDEMKgoNAAAAABUAAAAAGgUIeBDoAg%26gl%3DCO!7i13312!8i6656!4m5!3m4!1s0x85d2020768aeb6b9:0x56ce5e8a2310e99a!8m2!3d19.4382031!4d-99.1906407"
+          href="#"
           className="text-white"
           target="_blank"
           rel="noreferrer"
         >
           {" "}
-          Av. Ejercito Nacional 505, Oficina 401, Col. Granada, CDMX, 11520{" "}
+          Av. Insurgentes Sur No. 1863, Puso 3, Int. 301, Col. Guadalupe Inn, CP
+          01020{" "}
         </a>
         <span className="ml-3">
           <i className="fas fa-phone" />
