@@ -161,7 +161,7 @@ const Navbar = props => {
                   Contacto
                 </HashLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <a
                   className="nav-link btn btn-primary"
                   href="http://identishop.myshopify.com"
@@ -170,7 +170,7 @@ const Navbar = props => {
                 >
                   COMPRA ONLINE
                 </a>
-              </li>
+              </li> */}
               {/* <li className="nav-item">
                 <HashLink
                   smooth
