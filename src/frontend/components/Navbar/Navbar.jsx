@@ -34,7 +34,7 @@ const Navbar = props => {
           rel="noreferrer"
         >
           {" "}
-          Av. Insurgentes Sur No. 1863, Puso 3, Int. 301, Col. Guadalupe Inn, CP
+          Av. Insurgentes Sur No. 1863, Piso 3, Int. 301, Col. Guadalupe Inn, CP
           01020{" "}
         </a>
         <span className="ml-3">

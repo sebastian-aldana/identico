@@ -92,7 +92,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Av. Insurgentes Sur No. 1863, Puso 3, Int. 301, Col.
+                    Av. Insurgentes Sur No. 1863, Piso 3, Int. 301, Col.
                    
                     Guadalupe Inn, CP 01020
                   </a>
